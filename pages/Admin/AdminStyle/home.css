@@ -7,44 +7,41 @@
 /*******************
 *********NAV SECTION*
 *****************/
-#navbar_section_for_admin{
+#navbar_section_for_admin {
   width: 98.9vw;
   height: 8vh;
   /* background-color: #FFFFFF; */
- background-color: #34495E;
+  background-color: #34495e;
 }
-nav{
+nav {
   width: 100%;
   height: 100%;
   display: flex;
 }
-.nave_logo{
+.nave_logo {
   width: 55vw;
- 
 }
-.search_box{
+.search_box {
   width: 300px;
-  
 }
-.notification_section{
+.notification_section {
   width: 200px;
-  
+
   display: flex;
   justify-content: space-around;
 }
-.profile_section{
+.profile_section {
   width: 200px;
   padding-left: 40px;
-
 }
-.nave_logo h2{
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+.nave_logo h2 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   color: #e0e3e4;
   margin-top: 9px;
   margin-left: 10px;
 }
 
-#search_input_admin{
+#search_input_admin {
   width: 250px;
   height: 40px;
   border-radius: 20px;
@@ -53,42 +50,43 @@ nav{
   margin-left: 40px;
   padding: 15px;
 }
-#search_input_admin:focus{
+#search_input_admin:focus {
   outline: none;
 }
 /*****notification_section****/
-.notification_section .admin_tasks,.admin_mailbox,.admin_notification{
+.notification_section .admin_tasks,
+.admin_mailbox,
+.admin_notification {
   width: 40px;
   height: 40px;
   border-radius: 20px;
   box-shadow: 4px 2px 5px gray;
   margin-top: 8px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
-.fa-tasks,.fa-envelope,.fa-bell{
+.fa-tasks,
+.fa-envelope,
+.fa-bell {
   margin-top: 12px;
   margin-left: 12px;
-  
 }
-.notification_section .count_alert{
+.notification_section .count_alert {
   width: 18px;
   height: 18px;
   border-radius: 9px;
   background-color: red;
-  color: #FFFFFF;
+  color: #ffffff;
   position: relative;
   left: 25px;
   top: -30px;
   font-size: 12px;
   text-align: center;
-  
 }
 /***profile***/
-#dropdownMenuButton1:focus{
+#dropdownMenuButton1:focus {
   outline: none;
 }
-.profile_section .profile_photo{
-  
+.profile_section .profile_photo {
   width: 40px;
   height: 40px;
   border-radius: 20px;
@@ -112,12 +110,12 @@ nav{
   box-shadow: 4px 4px 6px gray;
 }
 /***sidebar profile***/
-.my_profileinsidebar{
+.my_profileinsidebar {
   width: 100%;
   height: 200px;
 }
-#profile_photo_forsidebar{
-  width:120px;
+#profile_photo_forsidebar {
+  width: 120px;
   height: 120px;
   position: relative;
   border-radius: 60px;
@@ -126,12 +124,12 @@ nav{
   margin-left: 40px;
   margin-top: 40px;
 }
-#profile_photo_forsidebar p{
+#profile_photo_forsidebar p {
   text-align: center;
   padding-top: 45%;
   font-size: 1.5rem;
 }
-input[type="file"]{
+input[type="file"] {
   position: absolute;
   width: 100%;
   top: 0;
@@ -139,7 +137,6 @@ input[type="file"]{
   height: 100%;
   opacity: 0;
 }
-
 
 .sidebar a {
   display: block;
@@ -150,7 +147,7 @@ input[type="file"]{
   height: 40px;
   font-family: sans-serif;
 }
- 
+
 .sidebar a.active {
   border-left: 3px solid #0250e0;
   color: #0194dd;
@@ -158,15 +155,14 @@ input[type="file"]{
 
 .sidebar a:hover:not(.active) {
   background-color: #0536bbe0;
-  
-  color: #FFFFFF;
+
+  color: #ffffff;
 }
 
 div.content {
   margin-left: 200px;
   padding: 1px 16px;
   height: 1000px;
-  
 }
 
 @media screen and (max-width: 700px) {
@@ -175,8 +171,12 @@ div.content {
     height: auto;
     position: relative;
   }
-  .sidebar a {float: left;}
-  div.content {margin-left: 0;}
+  .sidebar a {
+    float: left;
+  }
+  div.content {
+    margin-left: 0;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -186,50 +186,153 @@ div.content {
   }
 }
 /****CCONTENT****/
-.content .content_header{
+.content {
+  background-color: #e6f4f5;
+}
+.page_title_section {
+  width: 100%;
+  height: 36px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.dashboard {
+  width: 70%;
+  color: #0194dd;
+  font-size: 1.5rem;
+}
+.right_section {
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+}
+#select_section {
+  border-radius: 6px;
+
+  color: rgb(15, 15, 15);
+  height: 35px;
+}
+.create_button {
+  height: 35px;
+  width: 100px;
+  color: #fff;
+  background-color: rgb(1, 128, 29);
+  border-radius: 3px;
+  outline: none;
+}
+.settinr_button {
+  width: 35px;
+  height: 35px;
+  border-radius: 17.5px;
+  color: #e6f4f5;
+  font-size: 1.5rem;
+  background-color: #0194dd;
+  text-align: center;
+  padding-top: 6px;
+}
+.settinr_button:hover {
+  cursor: pointer;
+}
+.content .content_header {
   width: 100%;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  
 }
-.header_components{
+.header_components {
   width: 300px;
   height: 130px;
   border-radius: 10px;
   margin-top: 20px;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   box-shadow: 4px 2px 4px gray;
 }
-.session{
-  background-color: #019DFA;
+.session {
+  background-color: #019dfa;
 }
-.user{
+.user {
   background-color: #6553db;
 }
-.page_views{
+.page_views {
   background-color: #3ead4d;
 }
-.bounce_rate{
+.bounce_rate {
   background-color: #f1af2a;
 }
+.p1_forcount {
+  font-size: 3rem;
+  margin: 0;
+  color: #fff;
+}
+.p2_forname {
+  font-size: 1rem;
+  color: #fff;
+}
+
 /*main*/
-.content_main{
+.content_main {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
-.main_component1{
-  width: 700px;
+/***main component 1**/
+.main_component1 {
+  width: 300px;
   height: 300px;
-  border: 1px solid gray;
-  border-radius: 10px;
+
   margin-top: 20px;
+  box-shadow: 4px 2px 8px rgb(161, 160, 160);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.main_component2{
-  width: 500px;
+.main_compo_head {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+}
+.welcome {
+  font-size: 1.6rem;
+  color: black;
+  margin-left: 10px;
+  margin-bottom: 0;
+}
+.msg_count {
+  font-size: 0.8rem;
+  color: rgb(41, 39, 39);
+  margin-left: 18px;
+}
+.main_compo_noti {
+  width: 95%;
+}
+
+.user_nm {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.user_pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: red;
+}
+.u_mame{
+  font-size: 1rem;
+  color: black;
+  margin-left: 15px;
+}
+/***main component 2***/
+.main_component2 {
+  width: 800px;
   height: 300px;
   border: 1px solid gray;
-  border-radius: 10px;
+
   margin-top: 20px;
 }

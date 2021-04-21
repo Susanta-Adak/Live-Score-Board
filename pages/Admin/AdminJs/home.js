@@ -1,14 +1,15 @@
 
 function show_profile_p(){
-    
     var email=sessionStorage.getItem("user_email");
-    var pic_box=document.getElementById("profile_photo_forsidebar");
-    var imageurl=localStorage.getItem(email+"user_profileimage");
-    pic_box.style.background="url("+imageurl+")";
-    pic_box.style.backgroundRepeat="no-repeat";
-    pic_box.style.backgroundSize="cover";
-    document.getElementById("upload_icon").style.display="none";
-    
+    if(localStorage.getItem(email+"user_profileimage")!=null){
+        
+        var pic_box=document.getElementById("profile_photo_forsidebar");
+        var imageurl=localStorage.getItem(email+"user_profileimage");
+        pic_box.style.background="url("+imageurl+")";
+        pic_box.style.backgroundRepeat="no-repeat";
+        pic_box.style.backgroundSize="cover";
+        document.getElementById("upload_icon").style.display="none";
+    }
 }
 show_profile_p();
 function upload_pic(){
