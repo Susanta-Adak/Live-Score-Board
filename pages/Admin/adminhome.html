@@ -73,21 +73,28 @@
     </div>
     <!-- SIDEBAR  -->
     <div class="sidebar">
-      <a class="active" href="#home"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
-      <a href="#news">News</a>
-      <a href="#contact">Contact</a>
+      <div class="my_profileinsidebar">
+        <div id="profile_photo_forsidebar">
+          <p id="upload_icon">upload</p>
+          <input type="file" accept="image/*" name="photo" id="file_name" onchange="upload_pic()">
+        </div>
+      </div>
+      <a class="active" href="#home"><i class="fa fa-home" aria-hidden="true"></i> Dashboard</a>
+      <a href="#news">Score section</a>
+      <a href="#contact">News</a>
+      <a href="#inbox">Inbox</a>
+      <a href="#apps">Apps</a>
       <a href="#about">About</a>
     </div>
     
     <div class="content">
       <div class="content_header">
-        <div class="header_components">
-          <div class="feedback_image"></div>
-          <div class="feedback_details"></div>
+        <div class="header_components session">
+          
         </div>
-        <div class="header_components"></div>
-        <div class="header_components"></div>
-        <div class="header_components"></div>
+        <div class="header_components user"></div>
+        <div class="header_components page_views"></div>
+        <div class="header_components bounce_rate"></div>
       </div>
       <hr>
       <div class="content_main">
@@ -100,6 +107,6 @@
 
     <script src="AdminJs/home.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+    
   </body>
 </html>

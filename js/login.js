@@ -14,6 +14,8 @@ $(document).ready(()=>{
             if($("#login_pass").val()=="123"){
                
                 // window.location.replace("pages/Admin/adminhome.html"); 
+                var user=$("#login_username").val();
+                sessionStorage.setItem("user_email",user);
                 window.open('pages/Admin/adminhome.html','_self');
                 return false;
             }

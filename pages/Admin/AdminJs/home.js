@@ -1,0 +1,33 @@
+
+function show_profile_p(){
+    
+    var email=sessionStorage.getItem("user_email");
+    var pic_box=document.getElementById("profile_photo_forsidebar");
+    var imageurl=localStorage.getItem(email+"user_profileimage");
+    pic_box.style.background="url("+imageurl+")";
+    pic_box.style.backgroundRepeat="no-repeat";
+    pic_box.style.backgroundSize="cover";
+    document.getElementById("upload_icon").style.display="none";
+    
+}
+show_profile_p();
+function upload_pic(){
+    var input=document.getElementById("file_name");
+    var freader=new FileReader();
+    freader.readAsDataURL(input.files[0]);
+    freader.onloadend=function(event){
+        var show=document.getElementById("profile_photo_forsidebar");
+        var image_url=event.target.result;
+        show.style.background="url("+event.target.result+")";
+        show.style.backgroundRepeat="no-repeat";
+        show.style.backgroundSize="cover";
+        document.getElementById("upload_icon").style.display="none";
+
+        localStorage.setItem(sessionStorage.getItem('user_email')+"user_profileimage",image_url);
+        document.getElementById("mainpage").style.display="none";
+    
+        window.location=location.href;
+        
+    }
+    
+}

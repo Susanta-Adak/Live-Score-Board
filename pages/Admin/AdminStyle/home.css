@@ -104,27 +104,62 @@ nav{
   margin: 0;
   padding: 0;
   width: 200px;
-  background-color: #34495E;
+  background-color: #fff;
   position: fixed;
   height: 100%;
   overflow: auto;
+  top: 0;
+  box-shadow: 4px 4px 6px gray;
 }
+/***sidebar profile***/
+.my_profileinsidebar{
+  width: 100%;
+  height: 200px;
+}
+#profile_photo_forsidebar{
+  width:120px;
+  height: 120px;
+  position: relative;
+  border-radius: 60px;
+  background-color: rgb(154, 159, 161);
+  float: left;
+  margin-left: 40px;
+  margin-top: 40px;
+}
+#profile_photo_forsidebar p{
+  text-align: center;
+  padding-top: 45%;
+  font-size: 1.5rem;
+}
+input[type="file"]{
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  opacity: 0;
+}
+
 
 .sidebar a {
   display: block;
-  color: rgb(199, 187, 187);
-  padding: 16px;
+  color: black;
+  padding-left: 20px;
+  padding-top: 8px;
   text-decoration: none;
+  height: 40px;
+  font-family: sans-serif;
 }
  
 .sidebar a.active {
-  border-left: 4px solid #0099E6;
-  color: white;
+  border-left: 3px solid #0250e0;
+  color: #0194dd;
 }
 
 .sidebar a:hover:not(.active) {
-  background-color: #21262D;
-  color: white;
+  background-color: #0536bbe0;
+  
+  color: #FFFFFF;
 }
 
 div.content {
@@ -161,20 +196,23 @@ div.content {
 .header_components{
   width: 300px;
   height: 130px;
-  border: 1px solid gray;
   border-radius: 10px;
   margin-top: 20px;
   display: flex;
-
+  box-shadow: 4px 2px 4px gray;
 }
-.feedback_image{
-  width: 100px;
-  height: 100px;
-  border-radius: 50px;
-  background-image: url(../../../images/adminhome/feed1.jpg);
-  background-size: cover;
+.session{
+  background-color: #019DFA;
 }
-
+.user{
+  background-color: #6553db;
+}
+.page_views{
+  background-color: #3ead4d;
+}
+.bounce_rate{
+  background-color: #f1af2a;
+}
 /*main*/
 .content_main{
   display: flex;
