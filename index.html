@@ -1,0 +1,686 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live Score Board</title>
+
+    <!--Externail style sheet-->
+    <link rel="stylesheet" href="style/index.css" />
+    <link rel="stylesheet" href="style/login.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div id="nav_bar_section">
+        <nav class="nav" style="z-index: 100">
+          <div class="container">
+            <div class="logo">
+              <a href="#">Live Score</a>
+            </div>
+            <span id="seach_box">
+              <input
+                type="search"
+                name=""
+                id="search_input"
+                placeholder="Search hare..."
+              />
+            </span>
+            <div id="mainListDiv" class="main_list">
+              <ul class="navlinks">
+                <li><a href="#">Live Scores</a></li>
+                <li><a href="#">Schedule</a></li>
+                <li><a href="#">Archives</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Rankings</a></li>
+                <li id="admin_login_btn">
+                  <a href="#"
+                    ><i class="fa fa-sign-in" aria-hidden="true"></i> Admin
+                    LogIn
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- <span class="navTrigger">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </span> -->
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!--Main section for previwe score-->
+    <main>
+      <!--CIRCLE DESIGN-->
+      <div id="circle"><div id="circle_inner"></div></div>
+      <div id="live_score_header">
+        <div id="left_section">
+          <div id="teams_name">
+            <div id="team1">
+              <div id="team1_title">
+                <div class="first_team_name">England</div>
+                <div class="first_team_name">251 (42.1)</div>
+              </div>
+              <div id="team1_logo" class="team_logo">
+                <img src="images/download.png" alt="" />
+              </div>
+            </div>
+            <div id="line1"></div>
+            <div id="team2">
+              <div id="team2_logo" class="team_logo">
+                <img src="images/12.jfif" alt="" />
+              </div>
+              <div id="team2_title">
+                <div class="first_team_name">India</div>
+                <div class="first_team_name">251 (42.1)</div>
+              </div>
+            </div>
+          </div>
+
+          <div id="header_for_scoreboard">
+            <div id="team_name_label1" class="team_namelabel">India</div>
+            <div id="team_name_label2" class="team_name_label">England</div>
+          </div>
+          <!-- FIRST SCORE SECTION -->
+          <div
+            class="full_score_section_for_first_team"
+            id="score_table_for_firstteam"
+          >
+            <div id="hr_line"></div>
+            <div class="batting_score" id="">
+              <div id="first_batting_score_tableid" class="batting_score_table">
+                <!--Table rows-->
+                <div id="first_table_rowid" class="table_row">
+                  <div id="first_table_column1id" class="table_column1">
+                    BATTING
+                  </div>
+                  <div id="first_score_headingid" class="score_headingid">
+                    <div id="first_table_column2id" class="table_column2">
+                      R
+                    </div>
+                    <div id="first_table_column2id" class="table_column2">
+                      B
+                    </div>
+                    <div id="first_table_column2id" class="table_column2">
+                      4s
+                    </div>
+                    <div id="first_table_column2id" class="table_column2">
+                      6s
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="hr_line_for_scoreboard"
+                  style="border: 1px solid gray"
+                ></div>
+                <!--Table rows-->
+                <div id="first_table_rowid" class="table_row">
+                  <div id="first_table_column1id" class="table_column1">
+                    Rohit
+                  </div>
+                  <div id="first_score_headingid" class="score_headingid">
+                    <div id="first_table_column2id" class="table_column2">
+                      37
+                    </div>
+                    <div id="first_table_column2id" class="table_column2">
+                      37
+                    </div>
+                    <div id="first_table_column2id" class="table_column2">
+                      6
+                    </div>
+                    <div id="first_table_column2id" class="table_column2">
+                      0
+                    </div>
+                  </div>
+                </div>
+                <div class="hr_line_for_scoreboard"></div>
+                <!--Table rows-->
+                <div id="first_table_rowid" class="table_row">
+                  <div id="first_table_column1id" class="table_column1">
+                    Dhawan
+                  </div>
+                  <div id="first_score_headingid" class="score_headingid">
+                    <div id="first_table_column2id" class="table_column2">
+                      67
+                    </div>
+                    <div id="first_table_column2id" class="table_column2">
+                      56
+                    </div>
+                    <div id="first_table_column2id" class="table_column2">
+                      10
+                    </div>
+                    <div id="first_table_column2id" class="table_column2">
+                      0
+                    </div>
+                  </div>
+                </div>
+                <div class="hr_line_for_scoreboard"></div>
+                <!--Table rows-->
+                <div id="first_table_rowid" class="table_row">
+                  <div id="first_table_column1id" class="table_column1">
+                    Kohli(c)
+                  </div>
+                  <div id="first_score_headingid" class="score_headingid">
+                    <div id="first_table_column2id" class="table_column2">
+                      7
+                    </div>
+                    <div id="first_table_column2id" class="table_column2">
+                      10
+                    </div>
+                    <div id="first_table_column2id" class="table_column2">
+                      1
+                    </div>
+                    <div id="first_table_column2id" class="table_column2">
+                      0
+                    </div>
+                  </div>
+                </div>
+                <div class="hr_line_for_scoreboard"></div>
+                <!--Table rows-->
+                <div id="first_table_rowid" class="table_row">
+                  <div id="first_table_column1id" class="table_column1">
+                    Pant(wk)
+                  </div>
+                  <div id="first_score_headingid" class="score_headingid">
+                    <div id="first_table_column2id" class="table_column2">
+                      78
+                    </div>
+                    <div id="first_table_column2id" class="table_column2">
+                      62
+                    </div>
+                    <div id="first_table_column2id" class="table_column2">
+                      5
+                    </div>
+                    <div id="first_table_column2id" class="table_column2">
+                      4
+                    </div>
+                  </div>
+                </div>
+                <div class="hr_line_for_scoreboard"></div>
+                <!--Table rows-->
+              </div>
+            </div>
+
+            <div id="first_bowleer_score" class="bowling_score">
+              <div id="first_bowling_score_tableid" class="batting_score_table">
+                <!--Table rows-->
+                <div id="first_bowling_table_rowid" class="table_row">
+                  <div id="first_bowling_table_column1id" class="table_column1">
+                    BOWLING
+                  </div>
+                  <div
+                    id="first_bowling_score_headingid"
+                    class="score_headingid"
+                  >
+                    <div
+                      id="first_bowling_table_column2id"
+                      class="table_column2"
+                    >
+                      O
+                    </div>
+                    <div
+                      id="first_bowling_table_column2id"
+                      class="table_column2"
+                    >
+                      M
+                    </div>
+                    <div
+                      id="first_bowling_table_column2id"
+                      class="table_column2"
+                    >
+                      R
+                    </div>
+                    <div
+                      id="first_bowling_table_column2id"
+                      class="table_column2"
+                    >
+                      W
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="hr_line_for_scoreboard"
+                  style="border: 1px solid gray"
+                ></div>
+                <!--Table rows-->
+                <div id="first_bowling_table_rowid" class="table_row">
+                  <div id="first_bowling_table_column1id" class="table_column1">
+                    Sam Curran
+                  </div>
+                  <div
+                    id="first_bowling_score_headingid"
+                    class="score_headingid"
+                  >
+                    <div
+                      id="first_bowling_table_column2id"
+                      class="table_column2"
+                    >
+                      5
+                    </div>
+                    <div
+                      id="first_bowling_table_column2id"
+                      class="table_column2"
+                    >
+                      0
+                    </div>
+                    <div
+                      id="first_bowling_table_column2id"
+                      class="table_column2"
+                    >
+                      43
+                    </div>
+                    <div
+                      id="first_bowling_table_column2id"
+                      class="table_column2"
+                    >
+                      1
+                    </div>
+                  </div>
+                </div>
+                <div class="hr_line_for_scoreboard"></div>
+
+                <!--Table rows-->
+                <div id="first_bowling_table_rowid" class="table_row">
+                  <div id="first_bowling_table_column1id" class="table_column1">
+                    R Topley
+                  </div>
+                  <div
+                    id="first_bowling_score_headingid"
+                    class="score_headingid"
+                  >
+                    <div
+                      id="first_bowling_table_column2id"
+                      class="table_column2"
+                    >
+                      9.2
+                    </div>
+                    <div
+                      id="first_bowling_table_column2id"
+                      class="table_column2"
+                    >
+                      0
+                    </div>
+                    <div
+                      id="first_bowling_table_column2id"
+                      class="table_column2"
+                    >
+                      66
+                    </div>
+                    <div
+                      id="first_bowling_table_column2id"
+                      class="table_column2"
+                    >
+                      1
+                    </div>
+                  </div>
+                </div>
+                <div class="hr_line_for_scoreboard"></div>
+
+                <!--Table rows-->
+                <div id="first_bowling_table_rowid" class="table_row">
+                  <div id="first_bowling_table_column1id" class="table_column1">
+                    Adil Rashid
+                  </div>
+                  <div
+                    id="first_bowling_score_headingid"
+                    class="score_headingid"
+                  >
+                    <div
+                      id="first_bowling_table_column2id"
+                      class="table_column2"
+                    >
+                      10
+                    </div>
+                    <div
+                      id="first_bowling_table_column2id"
+                      class="table_column2"
+                    >
+                      0
+                    </div>
+                    <div
+                      id="first_bowling_table_column2id"
+                      class="table_column2"
+                    >
+                      81
+                    </div>
+                    <div
+                      id="first_bowling_table_column2id"
+                      class="table_column2"
+                    >
+                      2
+                    </div>
+                  </div>
+                </div>
+                <div class="hr_line_for_scoreboard"></div>
+
+                <!--Table rows-->
+              </div>
+            </div>
+          </div>
+
+          <!--SECOND TEAMS SCORE SECTION-->
+          <div
+            class="full_score_section_for_first_team"
+            id="score_table_for_lastteam"
+          >
+            <div id="hr_line"></div>
+            <div class="batting_score" id="">
+              <div id="last_batting_score_tableid" class="batting_score_table">
+                <!--Table rows-->
+                <div id="last_table_rowid" class="table_row">
+                  <div id="last_table_column1id" class="table_column1">
+                    BATTING
+                  </div>
+                  <div id="last_score_headingid" class="score_headingid">
+                    <div id="last_table_column2id" class="table_column2">R</div>
+                    <div id="last_table_column2id" class="table_column2">B</div>
+                    <div id="last_table_column2id" class="table_column2">
+                      4s
+                    </div>
+                    <div id="last_table_column2id" class="table_column2">
+                      6s
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="hr_line_for_scoreboard"
+                  style="border: 1px solid gray"
+                ></div>
+                <!--Table rows-->
+                <div id="last_table_rowid" class="table_row">
+                  <div id="last_table_column1id" class="table_column1">
+                    Jason Roy
+                  </div>
+                  <div id="last_score_headingid" class="score_headingid">
+                    <div id="last_table_column2id" class="table_column2">
+                      55
+                    </div>
+                    <div id="last_table_column2id" class="table_column2">
+                      52
+                    </div>
+                    <div id="last_table_column2id" class="table_column2">7</div>
+                    <div id="last_table_column2id" class="table_column2">4</div>
+                  </div>
+                </div>
+                <div class="hr_line_for_scoreboard"></div>
+
+                <!--Table rows-->
+              </div>
+            </div>
+
+            <div class="bowling_score" id="">
+              <div id="last_bowling_score_tableid" class="batting_score_table">
+                <!--Table rows-->
+                <div id="last_bowling_table_rowid" class="table_row">
+                  <div id="last_bowling_table_column1id" class="table_column1">
+                    BOWLING
+                  </div>
+                  <div
+                    id="last_bowling_score_headingid"
+                    class="score_headingid"
+                  >
+                    <div
+                      id="last_bowling_table_column2id"
+                      class="table_column2"
+                    >
+                      O
+                    </div>
+                    <div
+                      id="last_bowling_table_column2id"
+                      class="table_column2"
+                    >
+                      M
+                    </div>
+                    <div
+                      id="last_bowling_table_column2id"
+                      class="table_column2"
+                    >
+                      R
+                    </div>
+                    <div
+                      id="last_bowling_table_column2id"
+                      class="table_column2"
+                    >
+                      W
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="hr_line_for_scoreboard"
+                  style="border: 1px solid gray"
+                ></div>
+                <!--Table rows-->
+                <div id="last_bowling_table_rowid" class="table_row">
+                  <div id="last_bowling_table_column1id" class="table_column1">
+                    Bhuvneshwar Kumar
+                  </div>
+                  <div
+                    id="last_bowling_score_headingid"
+                    class="score_headingid"
+                  >
+                    <div
+                      id="last_bowling_table_column2id"
+                      class="table_column2"
+                    >
+                      4
+                    </div>
+                    <div
+                      id="last_bowling_table_column2id"
+                      class="table_column2"
+                    >
+                      0
+                    </div>
+                    <div
+                      id="last_bowling_table_column2id"
+                      class="table_column2"
+                    >
+                      55
+                    </div>
+                    <div
+                      id="last_bowling_table_column2id"
+                      class="table_column2"
+                    >
+                      1
+                    </div>
+                  </div>
+                </div>
+                <div class="hr_line_for_scoreboard"></div>
+
+                <!--Table rows-->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="style1"></div>
+        <div id="right_section">
+          <div class="news_card">
+            <div class="card_img1"></div>
+            <div class="card_description">
+              <h4>Pant-Pandya rebuilding act: A glimpse into the future?</h4>
+              <p>
+                Despite losing the top 4 batsmen by the halfway mark, Rishabh
+                Pant and Hardik Pandya adopted an aggressive approach Concerns
+                in losses, but not all doom and gloom for EnglandReport
+              </p>
+            </div>
+          </div>
+
+          <div class="news_card">
+            <div class="card_img2"></div>
+            <div class="card_description">
+              <h4>IPL Digest / Mohammed Shami is 'ready to go'</h4>
+              <p>
+                Catch all the latest updates, news and analysis around IPL 2021
+                Jadeja joins CSK camp; uncertainty continues over Dhoni's deputy
+              </p>
+            </div>
+          </div>
+
+          <div class="news_card">
+            <div class="card_img3"></div>
+            <div class="card_description">
+              <h4>Mayers falls for 49 after the break</h4>
+              <p>
+                Dhananjaya de Silva to Joshua Da Silva, no run, on his front
+                foot as he deals with this offbreak with a gentle push to mid-on
+              </p>
+            </div>
+          </div>
+
+          <div class="news_card">
+            <div class="card_img4"></div>
+            <div class="card_description">
+              <h4>Pant-Pandya rebuilding act: A glimpse into the future?</h4>
+              <p>
+                Despite losing the top 4 batsmen by the halfway mark, Rishabh
+                Pant and Hardik Pandya adopted an aggressive approach Concerns
+                in losses, but not all doom and gloom for EnglandReport
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="syle2"><div id="inner_style"></div></div>
+      </div>
+    </main>
+    <!-- FOOTER SECTION  -->
+    <footer>
+      <div class="jumbotron jumbotron-fluid bg-secondary p-4 mt-5 mb-0 ftr">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 cizgi">
+              <div class="card bg-secondary border-0">
+                <div class="card-body text-light text-center">
+                  <h5
+                    class="card-title text-white display-4"
+                    style="font-size: 30px"
+                  >
+                    CHITKARA UNIVERSITY
+                  </h5>
+                  <p class="d-inline lead">
+                    <br />
+                    <a href="#" class="text-light d-block lead"
+                      >susanta1195.be20@chitkara</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 cizgi">
+              <div class="card bg-secondary border-0">
+                <div class="card-body text-center">
+                  <h5
+                    class="card-title text-white display-4"
+                    style="font-size: 30px"
+                  >
+                    Contact With Us
+                  </h5>
+                  <a
+                    class="text-light d-block lead"
+                    style="margin-left: -20px"
+                    href="#"
+                    ><i class="fa fa-phone mr-2"></i>+91 (988)3185493</a
+                  >
+                  <a class="text-light d-block lead" href="#"
+                    ><i class="fa fa-envelope mr-2"></i
+                    >susantaadak513@gmail.com</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+              <div class="card bg-secondary border-0">
+                <div class="card-body text-center">
+                  <h5
+                    class="card-title text-white display-4"
+                    style="font-size: 30px"
+                  >
+                    Sosyal Medya
+                  </h5>
+
+                  <a class="text-light" href="#"
+                    ><i class="fa fa-facebook-square fa-fw fa-2x"></i
+                  ></a>
+
+                  <a class="text-light" href="#"
+                    ><i class="fa fa-twitter-square fa-fw fa-2x"></i
+                  ></a>
+
+                  <a class="text-light" href="#"
+                    ><i class="fa fa-instagram fa-fw fa-2x"></i
+                  ></a>
+
+                  <a class="text-light" href="#"
+                    ><i class="fa fa-linkedin fa-fw fa-2x"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ADMIN LOGIN SECTION -->
+    <div id="login_div_section">
+      <div id="div_for_lg">
+        <div id="login_div">
+            <!--  -->
+            
+            <div id="loin_left_div"></div>
+            <div id="login_right_div">
+              <i id="cloce_icon" class="fa fa-window-close" aria-hidden="true" style="font-size:25px"></i>
+              <div id="login_form_header1">
+                <p class="p1">Hello!</p>
+                <p class="p2">Good Morning</p>
+              </div>
+              
+              <form action="#" id="admin_login_form">
+                <p class="p3">LogIn your account</p>
+                <input type="text" name="" id="login_username" class="input-style" placeholder="Username">
+                <div class="for_hr_line"></div>
+                <input type="password" name="" id="login_pass" class="input-style" placeholder="Passwoed">
+                <div class="for_hr_line"></div>
+                <div class="alert_div">
+                  <p id="alert_user1">Wrong Username, Please reenter Username!</p>
+                  <p id="alert_user2">Wrong Passwoed, Please reenter Passwoed!</p>
+                </div>
+               
+                <div class="forgot_password"><p class="p4">forgot password?</p></div>
+                <button id="loginUser">LogIn</button>
+              </form>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JAVASCRIPT LINKS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/index.js"></script>
+    <script src="js/login.js"></script>
+  </body>
+</html>

@@ -1,0 +1,197 @@
+@charset "utf-8";
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+/*******************
+*********NAV SECTION*
+*****************/
+#navbar_section_for_admin{
+  width: 98.9vw;
+  height: 8vh;
+  /* background-color: #FFFFFF; */
+ background-color: #34495E;
+}
+nav{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.nave_logo{
+  width: 55vw;
+ 
+}
+.search_box{
+  width: 300px;
+  
+}
+.notification_section{
+  width: 200px;
+  
+  display: flex;
+  justify-content: space-around;
+}
+.profile_section{
+  width: 200px;
+  padding-left: 40px;
+
+}
+.nave_logo h2{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #e0e3e4;
+  margin-top: 9px;
+  margin-left: 10px;
+}
+
+#search_input_admin{
+  width: 250px;
+  height: 40px;
+  border-radius: 20px;
+  border: 2px solid gray;
+  margin-top: 7px;
+  margin-left: 40px;
+  padding: 15px;
+}
+#search_input_admin:focus{
+  outline: none;
+}
+/*****notification_section****/
+.notification_section .admin_tasks,.admin_mailbox,.admin_notification{
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  box-shadow: 4px 2px 5px gray;
+  margin-top: 8px;
+  background-color: #FFFFFF;
+}
+.fa-tasks,.fa-envelope,.fa-bell{
+  margin-top: 12px;
+  margin-left: 12px;
+  
+}
+.notification_section .count_alert{
+  width: 18px;
+  height: 18px;
+  border-radius: 9px;
+  background-color: red;
+  color: #FFFFFF;
+  position: relative;
+  left: 25px;
+  top: -30px;
+  font-size: 12px;
+  text-align: center;
+  
+}
+/***profile***/
+#dropdownMenuButton1:focus{
+  outline: none;
+}
+.profile_section .profile_photo{
+  
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-image: url(../../../images/adminhome/susantaadak.PNG);
+  background-size: cover;
+}
+
+/*************************
+**********SIDEBAR**********
+**************************/
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #34495E;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: rgb(199, 187, 187);
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  border-left: 4px solid #0099E6;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #21262D;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+  
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+/****CCONTENT****/
+.content .content_header{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  
+}
+.header_components{
+  width: 300px;
+  height: 130px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin-top: 20px;
+  display: flex;
+
+}
+.feedback_image{
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background-image: url(../../../images/adminhome/feed1.jpg);
+  background-size: cover;
+}
+
+/*main*/
+.content_main{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.main_component1{
+  width: 700px;
+  height: 300px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.main_component2{
+  width: 500px;
+  height: 300px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin-top: 20px;
+}
