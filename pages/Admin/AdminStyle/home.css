@@ -10,9 +10,9 @@
 #navbar_section_for_admin {
   width: 98.9vw;
   height: 8vh;
-  /* background-color: #FFFFFF; */
-  background-color: #34495e;
+  background-image: linear-gradient(30deg,#0186C4,#01BBDE);
 }
+
 nav {
   width: 100%;
   height: 100%;
@@ -60,9 +60,14 @@ nav {
   width: 40px;
   height: 40px;
   border-radius: 20px;
-  box-shadow: 4px 2px 5px gray;
+  box-shadow: 2px 2px 5px rgb(3, 89, 116);
   margin-top: 8px;
   background-color: #ffffff;
+}
+.notification_section .admin_tasks,
+.admin_mailbox,
+.admin_notification:hover{
+  cursor: pointer;
 }
 .fa-tasks,
 .fa-envelope,
@@ -250,6 +255,10 @@ div.content {
   align-items: center;
   box-shadow: 4px 2px 4px gray;
 }
+.header_components:hover{
+  box-shadow: 1px 1px 1px rgb(161, 160, 160);
+  cursor:pointer;
+}
 .session {
   background-color: #019dfa;
 }
@@ -281,13 +290,16 @@ div.content {
 /***main component 1**/
 .main_component1 {
   width: 300px;
-  height: 300px;
-
+  height: 400px;
+  background-color: #FFFFFF;
   margin-top: 20px;
   box-shadow: 4px 2px 8px rgb(161, 160, 160);
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.main_component1:hover{
+  box-shadow: 2px 1px 2px rgb(161, 160, 160);
 }
 .main_compo_head {
   width: 100%;
@@ -307,32 +319,73 @@ div.content {
   margin-left: 18px;
 }
 .main_compo_noti {
-  width: 95%;
+  width: 90%;
 }
 
-.user_nm {
+.user_nm_s {
   width: 100%;
   height: 50px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  
+}
+.user_nm_s:hover{
+  background-color: #c0c9ccd7;
+  cursor: pointer;
 }
 .user_pic {
-  width: 50px;
-  height: 50px;
-  border-radius: 25px;
-  background-color: red;
+  width: 45px;
+  height: 45px;
+  border-radius: 22.5px;
 }
-.u_mame{
-  font-size: 1rem;
-  color: black;
+#pf_img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.user_mame{
   margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.user_mame p{
+  margin: 0;
+}
+.user_mame .pn1{
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: black;
+  margin: 0px;
+}
+.user_mame .pn2{
+  font-size: 0.7rem;
+  color: black;
+  margin-top: -3px;
+}
+.user_mame .pn3{
+  font-size: 0.7rem;
+  color: black;
+  font-weight: 600;
 }
 /***main component 2***/
 .main_component2 {
-  width: 800px;
-  height: 300px;
-  border: 1px solid gray;
+  width: 700px;
+  height: 400px;
+  margin-top: 20px;
+  box-shadow: 4px 2px 8px rgb(161, 160, 160);
+}
+.main_component2:hover{
+  box-shadow: 2px 1px 2px rgb(161, 160, 160);
+}
+#world_map{
+  width: 100%;
+  height: 100%;
+}
 
+/***main component 3***/
+.main_component3{
+  width: 200px;
+  height: 400px;
+  border: 1px solid gray;
   margin-top: 20px;
 }
