@@ -190,6 +190,17 @@ div.content {
     float: none;
   }
 }
+.dropdown-container {
+  display: none;
+  background-color: #bedde9;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
 /****CCONTENT****/
 .content {
   background-color: #e6f4f5;
@@ -308,8 +319,9 @@ div.content {
   flex-direction: column;
 }
 .welcome {
-  font-size: 1.6rem;
-  color: black;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: rgba(44, 43, 43, 0.959);
   margin-left: 10px;
   margin-bottom: 0;
 }
@@ -320,6 +332,29 @@ div.content {
 }
 .main_compo_noti {
   width: 90%;
+  overflow-y: scroll;
+}
+
+/* width */
+.main_compo_noti::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+.main_compo_noti::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px grey; 
+  border-radius: 4px;
+}
+ 
+/* Handle */
+.main_compo_noti::-webkit-scrollbar-thumb {
+  background: rgba(51, 50, 50, 0.692); 
+  border-radius: 4px;
+}
+
+/* Handle on hover */
+.main_compo_noti::-webkit-scrollbar-thumb:hover {
+  background: #3b3939d8; 
 }
 
 .user_nm_s {
@@ -386,13 +421,14 @@ div.content {
 ****main component 3***
 **********************/
 .main_component3{
-  width: 200px;
+  width: 210px;
   height: 400px;
   margin-top: 20px;
   display: flex;
   flex-direction: column;
   background-color: #FFFFFF;
   box-shadow: 4px 2px 8px rgb(161, 160, 160);
+  border-radius: 4px;
 }
 .main_component3:hover{
   box-shadow: 2px 1px 2px rgb(161, 160, 160);
@@ -400,6 +436,22 @@ div.content {
 .upper_section{
   width: 100%;
   height: 100px;
+  display:flex;
+  flex-direction: column;
+
+}
+.upper_section .visitor_1{
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-left: 15px;
+  margin-top: 12px;
+}
+.upper_section .visitor_2{
+  font-size: 0.7rem;
+  color: #313030a9;
+  font-weight: 500;
+  margin-top: -10px;
+  margin-left: 15px;
 }
 .midel_section{
   width: 100%;
@@ -410,11 +462,32 @@ div.content {
   width: 100%;
   height: 100px;
 }
+.mobile{
+  color: #755AF4;
+  margin-left: 10px;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+.desktop{
+  color: #2898f3;
+  margin-left: 10px;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+.tablet{
+  color: #004f94;
+  margin-left: 10px;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+.fa-dot-circle-o{
+  margin-left: 13px;
+}
 /*circle pi chart*/
 .pieContainer {
   height: 150px;
   position: relative;
-  left: 20px;
+  left: 30px;
   top: 25px;
 }
 
