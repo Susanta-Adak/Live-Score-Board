@@ -91,12 +91,10 @@ nav {
 #dropdownMenuButton1:focus {
   outline: none;
 }
-.profile_section .profile_photo {
+.profile_section #profile_photo {
   width: 40px;
   height: 40px;
   border-radius: 20px;
-  background-image: url(../../../images/adminhome/susantaadak.PNG);
-  background-size: cover;
 }
 
 /*************************
@@ -112,22 +110,25 @@ nav {
   height: 100%;
   overflow: auto;
   top: 0;
-  box-shadow: 4px 4px 6px gray;
+  box-shadow: 2px 2px 4px gray;
 }
 /***sidebar profile***/
 .my_profileinsidebar {
   width: 100%;
-  height: 200px;
+  height: 150px;
 }
 #profile_photo_forsidebar {
-  width: 120px;
-  height: 120px;
+  width: 90px;
+  height: 90px;
   position: relative;
-  border-radius: 60px;
+  border-radius: 45px;
   background-color: rgb(154, 159, 161);
   float: left;
-  margin-left: 40px;
-  margin-top: 40px;
+  margin-left: 55px;
+  margin-top: 30px;
+}
+#my_side_pic h6{
+  margin-left: 55px;
 }
 #profile_photo_forsidebar p {
   text-align: center;
@@ -145,17 +146,19 @@ input[type="file"] {
 
 .sidebar a {
   display: block;
-  color: black;
+  color: rgba(48, 46, 46, 0.842);
   padding-left: 20px;
   padding-top: 8px;
   text-decoration: none;
   height: 40px;
   font-family: sans-serif;
+  font-weight: 500;
 }
 
 .sidebar a.active {
-  border-left: 3px solid #0250e0;
-  color: #0194dd;
+  background-color: #0194dd;
+  color: #f8f9fa;
+  font-weight: 500;
 }
 
 .sidebar a:hover:not(.active) {

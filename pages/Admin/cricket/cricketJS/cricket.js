@@ -13,6 +13,7 @@ function show_profile_nave(){
 }
 show_profile_nave();
 
+
 function show_profile_p(){
     var email=sessionStorage.getItem("user_email");
     if(localStorage.getItem(email+"user_profileimage")!=null){
@@ -62,3 +63,16 @@ for (i = 0; i < dropdown.length; i++) {
   }
   });
 }
+/*EADIT BUTTON SECTION*/
+$(document).ready(()=>{
+    $(".eadit_btn_section").hide();
+    $(".match_1,.eadit_btn_section").mouseenter(()=>{
+        $(".eadit_btn_section").show();
+    }
+    );
+    $(".match_1,.eadit_btn_section").mouseleave(()=>{
+        $(".eadit_btn_section").hide();
+    });
+   }
+
+);

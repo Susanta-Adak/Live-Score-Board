@@ -60,7 +60,7 @@
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
-              <div class="profile_photo"></div>
+              <div id="profile_photo"></div>
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
               <li><a class="dropdown-item" href="#"><i class="fa fa-user" aria-hidden="true"></i> My Profile</a></li>
@@ -73,26 +73,31 @@
     </div>
     <!-- SIDEBAR  -->
     <div class="sidebar">
-      <div class="my_profileinsidebar">
+      <div class="my_profileinsidebar" id="my_side_pic">
         <div id="profile_photo_forsidebar">
           <p id="upload_icon">upload</p>
           <input type="file" accept="image/*" name="photo" id="file_name" onchange="upload_pic()">
         </div>
+        <h6>Susanta Adak</h6>
       </div>
       <a class="active" href="#home"><i class="fa fa-home" aria-hidden="true"></i> Dashboard</a>
       
-      <a href="#score" class="dropdown-btn">Score Section 
+      <a href="#score" class="dropdown-btn"><i class="fa fa-futbol-o" aria-hidden="true"></i> Score Section 
         <i class="fa fa-caret-down"></i>
       </a>
       <div class="dropdown-container">
-        <a href="#">Link 1</a>
+        <a href="cricket/cricket.html">Cricket</a>
         <a href="#">Link 2</a>
         <a href="#">Link 3</a>
       </div>
-      <a href="#contact">News</a>
-      <a href="#inbox">Inbox</a>
-      <a href="#apps">Apps</a>
-      <a href="#about">About</a>
+      <a href="#contact"><i class="fa fa-newspaper-o" aria-hidden="true"></i> News</a>
+      <a href="#inbox"><i class="fa fa-envelope-o" aria-hidden="true"></i> Inbox</a>
+      <a href="#apps"><i class="fa fa-android" aria-hidden="true"></i> Apps</a>
+      <a href="#ui"><i class="fa fa-snowflake-o" aria-hidden="true"></i> Ui elements</a>
+      <!-- <a href="#ui"> Ui Elements</a>
+      <a href="#ui"> Ui Elements</a> -->
+      <a href="#about"><i class="fa fa-address-book-o" aria-hidden="true"></i> About</a>
+      <a href="#setings"><i class="fa fa-cogs" aria-hidden="true"></i> Setings</a>
     </div>
     
     <!-- START MAIN CONTENT -->
