@@ -258,14 +258,16 @@ div.content {
 .settinr_button:hover {
   cursor: pointer;
 }
-/**MAIN CONTENT**/
+/**********************
+*********MAIN CONTENT**
+************************/
 .main_content{
-  width: 100%;
+  width: 80%;
   display: flex;
   flex-wrap: wrap;
-
+  justify-content: space-between;
 }
-.match_1{
+.match_1,.match_2,.match_3,.match_4,.match_5,.match_6{
   width: 500px;
   height: 300px;
   background-color: #02526d;
@@ -274,9 +276,9 @@ div.content {
   box-shadow: 4px 3px 12px rgb(109, 106, 250);
   display: flex;
   flex-direction: column;
-
+  margin-top: 15px;
 }
-.match_1:hover{
+.match_1:hover,.match_2:hover,.match_3:hover,.match_4:hover,.match_5:hover,.match_6:hover{
   box-shadow: 1px 1px 2px gray;
 }
 .card_header{
@@ -300,22 +302,27 @@ div.content {
   margin-top: -20px;
 }
 /*TEAM 1*/
-.team_1{
+.team_1,.team_2{
   width: 200px;
-  height: 220px;
+  height: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
 
 }
-.team1_logo{
+.team_logo_in_card{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  
+}
+.tmlogo{
   width: 120px;
   height: 120px;
   border-radius: 60px;
-  background-image: url(../../../../images/cricket/KKRlogo.jfif);
-  background-size: cover;
+  
 }
-.team1_nam{
+.tmname{
   font-size: 1.6rem;
   font-weight: 600;
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -326,10 +333,12 @@ div.content {
 /*MIDLE*/
 .midle_s{
   width: 100px;
-  height: 220px;
+  height: 200px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  
 }
 #vs_logo{
   height: 130px;
@@ -337,44 +346,42 @@ div.content {
   margin: 0;
   margin-top: -30px;
 }
+.date{
+  font-weight: 500;
+  color: #f5deec;
+  font-size: 0.9rem;
+  margin: 0;
+}
 /*TEAM 2*/
-.team_2{
-  width: 200px;
-  height: 220px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.team2_logo{
-  width: 120px;
-  height: 120px;
-  border-radius: 60px;
-  background-image: url(../../../../images/cricket/rcb.jpg);
-  background-size: cover;
-}
-.team2_nam{
-  font-size: 1.6rem;
-  font-weight: 600;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  background: -webkit-linear-gradient(#eee, rgba(24, 35, 58, 0.932));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+
 /***EADIT SECTION*/
-.eadit_btn_section{
+.eadit_btn_section,.eadit_btn_section2,.eadit_btn_section3,.eadit_btn_section4,.eadit_btn_section5,.eadit_btn_section6{
   position: relative;
-  left: -500px;
-  top: 220px;
+  top: -80px;
   z-index: 10;
   width: 500px;
   height: 80px;
   background: rgba(48, 48, 48, 0.3);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(7px);
+  
+
+}
+.temp{
+  height: 80px;
+  width: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
-.eadit_btn_section a{
+.main_content a{
   text-decoration: none;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-inline: 15px;
 }
+.main_content a:hover{
+  color: #07da00;
+}
+/***********
+***MATCH 2*/

@@ -65,13 +65,54 @@ for (i = 0; i < dropdown.length; i++) {
 }
 /*EADIT BUTTON SECTION*/
 $(document).ready(()=>{
-    $(".eadit_btn_section").hide();
-    $(".match_1,.eadit_btn_section").mouseenter(()=>{
+    $(".eadit_btn_section,.eadit_btn_section2,.eadit_btn_section3,.eadit_btn_section4,.eadit_btn_section5,.eadit_btn_section6").hide();
+    /*m1*/
+    $(".match_1").mouseenter(()=>{
         $(".eadit_btn_section").show();
     }
     );
-    $(".match_1,.eadit_btn_section").mouseleave(()=>{
+    $(".match_1").mouseleave(()=>{
         $(".eadit_btn_section").hide();
+    });
+    /*m2*/
+    $(".match_2").mouseenter(()=>{
+        $(".eadit_btn_section2").show();
+    }
+    );
+    $(".match_2").mouseleave(()=>{
+        $(".eadit_btn_section2").hide();
+    });
+    /*m3*/
+    $(".match_3").mouseenter(()=>{
+        $(".eadit_btn_section3").show();
+    }
+    );
+    $(".match_3").mouseleave(()=>{
+        $(".eadit_btn_section3").hide();
+    });
+    /*m4*/
+    $(".match_4").mouseenter(()=>{
+        $(".eadit_btn_section4").show();
+    }
+    );
+    $(".match_4").mouseleave(()=>{
+        $(".eadit_btn_section4").hide();
+    });
+    /*m5*/
+    $(".match_5").mouseenter(()=>{
+        $(".eadit_btn_section5").show();
+    }
+    );
+    $(".match_5").mouseleave(()=>{
+        $(".eadit_btn_section5").hide();
+    });
+    /*m6*/
+    $(".match_6").mouseenter(()=>{
+        $(".eadit_btn_section6").show();
+    }
+    );
+    $(".match_6").mouseleave(()=>{
+        $(".eadit_btn_section6").hide();
     });
    }
 
