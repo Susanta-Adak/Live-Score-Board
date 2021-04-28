@@ -1,0 +1,104 @@
+@charset "utf-8";
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.container_blur {
+    position: absolute;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    width: 98.99vw;
+    height: 100vh;
+    background: rgba(86, 86, 86, 0.3);
+    backdrop-filter: blur(10px);
+    display: block;
+}
+.temp_content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.select_option {
+    width: 650px;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+}
+#select_left_div {
+    width: 55%;
+    height: 100%;
+    background-image: url(../../../../images/operate/cricketOp.jpg);
+    background-size: 100% 100%;
+  }
+  #select_right_div {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .fa-window-close {
+    position: relative;
+    left: 120px;
+    top: 10px;
+  }
+  .fa-window-close:hover {
+    cursor: pointer;
+  }
+  #select_header1 {
+    padding-left: 20px;
+    color: rgb(57, 0, 80);
+    width: 100%;
+    margin-top: -20px;
+  }
+  #select_header1 .p1 {
+    font-size: 18px;
+    font-family: "Times New Roman", Times, serif;
+  }
+  #select_header1 .p2 {
+    margin-top: -10px;
+    font-weight: bold;
+    font-size: 21px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  .style4{
+    width: 260px;
+    height: 100px;
+    box-shadow: 2px 2px 4px gray;
+    border-radius: 5px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .style4:hover{
+      box-shadow: 1px 1px 2px gray;
+  }
+  .batting{
+
+  }
+  .bating_logo{
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background-color: rgb(155, 84, 84);
+      background-image: url(../../../../images/operate/logo.jpg);
+      background-size:cover;
+  }
+  .bating_txt{
+      margin-left: 8px;
+    font-weight: bold;
+    color: #740055;
+    font-size: 21px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  .bowling{
+      margin-top: 30px;
+  }
