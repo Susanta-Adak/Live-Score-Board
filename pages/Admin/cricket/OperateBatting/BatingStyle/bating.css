@@ -169,9 +169,7 @@ input[type="file"] {
 div.content {
   margin-left: 200px;
   padding: 1px 16px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  
   
   
 }
@@ -216,8 +214,26 @@ div.content {
 *****CCONTENT****/
 .content {
   background-color: #e6f4f5;
-  
+  background-image: url(../../../../../images/operateBatting/p3.png);
+  background-size: cover;
+  height: 91vh;
 }
+/**first innings***/
+#first_innings{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/***second innings**/
+#second_innings{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
 .add_score{
   width: 100%;
   display: flex;
@@ -227,11 +243,58 @@ div.content {
   width: 400px;
   height: 500px;
   box-shadow: 4px 4px 8px gray;
+  background: rgba(86, 86, 86, 0.3);
+  backdrop-filter: blur(10px);
 }
 .add_score >div:hover{
   box-shadow: 2px 2px 4px gray;
 }
-/*****FIRST TEAM****/
+/****ADD TLTLE SECTION***/
+/*TITLE SECTION*/
+.page_title_section {
+  width: 88.3%;
+  height: 36px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.cricket_ti {
+  width: 70%;
+  color: #6a00b1;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.right_section {
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+}
+.select_section {
+  border-radius: 6px;
+  border: none;
+  color: rgb(15, 15, 15);
+  height: 35px;
+  background-color: #ffffff;
+}
+.select_section:focus{
+  outline: none;
+}
+
+.settinr_button {
+  width: 35px;
+  height: 35px;
+  border-radius: 17.5px;
+  color: #e6f4f5;
+  font-size: 1.5rem;
+  background-color: #0194dd;
+  text-align: center;
+  padding-top: 6px;
+}
+.settinr_button:hover {
+  cursor: pointer;
+}
+/*****FIRST TEAM FORM****/
 .add_score_section_form_ft{
   width: 100%;
   height: 100%;
@@ -241,8 +304,10 @@ div.content {
   justify-content: space-around;
 }
 .add_score_section_form_ft p{
-  padding: 0px;
-
+  margin-bottom: -2px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgba(26, 25, 25, 0.979);
 }
 .add_score_section_form_ft select{
   width: 200px;
@@ -250,7 +315,7 @@ div.content {
 .form_header{
   width: 100%;
   height: 40px;
-  background-image: linear-gradient(45deg,rgba(4, 77, 138, 0.959),rgb(0, 42, 119));
+  background-image: linear-gradient(45deg,rgba(4, 77, 138, 0.959),rgb(2, 71, 201));
   display: flex;
   justify-content: center;
   align-items: center;
@@ -267,21 +332,32 @@ div.content {
 .main_run select{
   width: 100px;
 }
+#other_run{
+  width: 200px;
+}
+#extrarun{
+  width: 200px;
+}
 /***FIRST TEAM SCORE PREVIEW SECTION**/
-.first_team_score_preview{
+.first_team_score_preview,.first_team_score_preview2{
   width: 600px;
   min-height: 500px;
   box-shadow: 4px 4px 8px gray;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: rgba(86, 86, 86, 0.3);
+  backdrop-filter: blur(20px);
+  padding-top: 5px;
 }
 
 .hr_line_for_scoreboard{
   width: 93%;
-  border: 1px solid #fff;
+  height: 2px;
+  border: 1px solid rgb(255, 255, 255);
   background-color: gray;
 }
+
 .batting_score{
   width: 100%;
 }
@@ -292,6 +368,7 @@ div.content {
 }
 .table_row{
   width: 94%;
+  height: 30px;
   display: flex;
   justify-content: space-between;
   font-size: 15px;
@@ -299,15 +376,34 @@ div.content {
   font-weight: bold;
 }
 .table_column1{
-  width: 200px;
+  width: 300px;
   height: 30px;
+  display: flex;
+}
+.p_nm{
+  width: 200px; 
+}
+.p_status{
+  word-wrap: none;
 }
 .score_headingid{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .table_column2{
-  width: 45px;
+  width: 50px;
   height: 30px;
   text-align: center;
+}
+.footer_score{
+  width: 94%;
+  height: 30px;
+  display: flex;
+}
+.name_txt{
+  width: 67.1%;
+  height: 30px;
+}
+.run_footer_prev{
+  margin-left: 80%;
 }
