@@ -8,12 +8,11 @@
     position: absolute;
     z-index: 10000;
     top: 0;
-    left: 0;
-    width: 98.99vw;
+    /* left: 0; */
+    width: 100vw;
     height: 100vh;
     background: rgba(86, 86, 86, 0.3);
     backdrop-filter: blur(10px);
-    display: block;
 }
 .temp_content {
     width: 100%;
@@ -76,9 +75,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
   }
   .style4:hover{
       box-shadow: 1px 1px 2px gray;
+      cursor: pointer;
   }
   .batting{
 

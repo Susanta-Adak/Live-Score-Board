@@ -1,0 +1,313 @@
+@charset "utf-8";
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+/*******************
+*********NAV SECTION*
+*****************/
+#navbar_section_for_admin {
+  width: 100vw;
+  height: 8vh;
+  background-image: linear-gradient(30deg, #0186c4, #01bbde);
+}
+
+nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.nave_logo {
+  width: 55vw;
+}
+.search_box {
+  width: 300px;
+}
+.notification_section {
+  width: 200px;
+
+  display: flex;
+  justify-content: space-around;
+}
+.profile_section {
+  width: 200px;
+  padding-left: 40px;
+}
+.nave_logo h2 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: #e0e3e4;
+  margin-top: 9px;
+  margin-left: 10px;
+}
+
+#search_input_admin {
+  width: 250px;
+  height: 40px;
+  border-radius: 20px;
+  border: 2px solid gray;
+  margin-top: 7px;
+  margin-left: 40px;
+  padding: 15px;
+}
+#search_input_admin:focus {
+  outline: none;
+}
+/*****notification_section****/
+.notification_section .admin_tasks,
+.admin_mailbox,
+.admin_notification {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px rgb(3, 89, 116);
+  margin-top: 8px;
+  background-color: #ffffff;
+}
+.notification_section .admin_tasks,
+.admin_mailbox,
+.admin_notification:hover {
+  cursor: pointer;
+}
+.fa-tasks,
+.fa-envelope,
+.fa-bell {
+  margin-top: 12px;
+  margin-left: 12px;
+}
+.notification_section .count_alert {
+  width: 18px;
+  height: 18px;
+  border-radius: 9px;
+  background-color: red;
+  color: #ffffff;
+  position: relative;
+  left: 25px;
+  top: -30px;
+  font-size: 12px;
+  text-align: center;
+}
+/***profile***/
+#dropdownMenuButton1:focus {
+  outline: none;
+}
+.profile_section #profile_photo {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+/*************************
+**********SIDEBAR**********
+**************************/
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #fff;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  top: 0;
+  box-shadow: 2px 2px 4px gray;
+}
+/***sidebar profile***/
+.my_profileinsidebar {
+  width: 100%;
+  height: 150px;
+}
+#profile_photo_forsidebar {
+  width: 90px;
+  height: 90px;
+  position: relative;
+  border-radius: 45px;
+  background-color: rgb(154, 159, 161);
+  float: left;
+  margin-left: 55px;
+  margin-top: 30px;
+}
+#my_side_pic h6 {
+  margin-left: 55px;
+}
+#profile_photo_forsidebar p {
+  text-align: center;
+  padding-top: 45%;
+  font-size: 1.5rem;
+}
+input[type="file"] {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  opacity: 0;
+}
+
+.sidebar a {
+  display: block;
+  color: rgba(48, 46, 46, 0.842);
+  padding-left: 20px;
+  padding-top: 8px;
+  text-decoration: none;
+  height: 40px;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+
+.sidebar a.active {
+  background-color: #0194dd;
+  color: #f8f9fa;
+  font-weight: 500;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #0536bbe0;
+  color: #ffffff;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {
+    float: left;
+  }
+  div.content {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+.dropdown-container {
+  display: block;
+  background-color: #bedde9;
+  padding-left: 8px;
+}
+.dropdown-btn {
+  background-color: #0194dd;
+}
+.st1 {
+  background-color: #01bbde;
+}
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+/***************
+*****CCONTENT****/
+.content {
+  background-color: #e6f4f5;
+  
+}
+.add_score{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.first_team_add_score{
+  width: 400px;
+  height: 500px;
+  box-shadow: 4px 4px 8px gray;
+}
+.add_score >div:hover{
+  box-shadow: 2px 2px 4px gray;
+}
+/*****FIRST TEAM****/
+.add_score_section_form_ft{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.add_score_section_form_ft p{
+  padding: 0px;
+
+}
+.add_score_section_form_ft select{
+  width: 200px;
+}
+.form_header{
+  width: 100%;
+  height: 40px;
+  background-image: linear-gradient(45deg,rgba(4, 77, 138, 0.959),rgb(0, 42, 119));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.update_text{
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #bfddf5;
+}
+.main_run{
+  display: flex;
+
+}
+.main_run select{
+  width: 100px;
+}
+/***FIRST TEAM SCORE PREVIEW SECTION**/
+.first_team_score_preview{
+  width: 600px;
+  min-height: 500px;
+  box-shadow: 4px 4px 8px gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hr_line_for_scoreboard{
+  width: 93%;
+  border: 1px solid #fff;
+  background-color: gray;
+}
+.batting_score{
+  width: 100%;
+}
+.batting_score_table{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.table_row{
+  width: 94%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+}
+.table_column1{
+  width: 200px;
+  height: 30px;
+}
+.score_headingid{
+  display: flex;
+  justify-content: space-between;
+}
+.table_column2{
+  width: 45px;
+  height: 30px;
+  text-align: center;
+}
