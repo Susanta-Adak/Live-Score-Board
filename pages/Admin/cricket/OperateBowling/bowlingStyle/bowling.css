@@ -214,7 +214,7 @@ div.content {
 *****CCONTENT****/
 .content {
   background-color: #e6f4f5;
-  background-image: url(../../../../../images/operateBatting/p3.png);
+  background-image: url(../../../../../images/operateBowling/p2.jpg);
   background-size: cover;
   height: 91vh;
 }
@@ -339,7 +339,7 @@ div.content {
   width: 200px;
 }
 /***FIRST TEAM SCORE PREVIEW SECTION**/
-.first_team_score_preview,.first_team_score_preview2{
+.first_team_score_preview,.first_team_score_preview2,.second_team_score_preview3{
   width: 600px;
   min-height: 500px;
   box-shadow: 4px 4px 8px gray;
@@ -366,7 +366,7 @@ div.content {
   flex-direction: column;
   align-items: center;
 }
-.table_row{
+.table_row,.table_row2{
   width: 94%;
   height: 30px;
   display: flex;
@@ -386,7 +386,7 @@ div.content {
 .p_status{
   word-wrap: none;
 }
-.score_headingid{
+.score_headingid,.score_headingid2{
   display: flex;
   justify-content: space-around;
 }
