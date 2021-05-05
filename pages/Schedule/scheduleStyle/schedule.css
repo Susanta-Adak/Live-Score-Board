@@ -1,0 +1,82 @@
+@charset "utf-8";
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+.header_title_section{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+   
+}
+.title_manu{
+    width: 75%;
+    height: 80px;
+    
+    z-index: 100;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.btn_sehedule{
+    width: 150px;
+    height: 30px;
+    background-color: #ffff;
+    border-radius: 15px;
+    border: none;
+}
+/* .clicked_btn{
+    background-color: rgb(0, 94, 0);
+    color: white;
+} */
+.main_for_schedule{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    
+}
+.schedule_section{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.schedule_card{
+    width: 100%;
+    height: 80px;
+    margin-bottom: 10px;
+    background-color: #ffff;
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px gray inset;
+    z-index: 100;
+    display: flex;
+}
+.date_se{
+    width: 30%;
+    height: 100%;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.details_se{
+    width: 40%;
+    height: 100%;
+}
+.p1_se{
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.p2_se{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: -8px;
+    color: rgb(82, 81, 81);
+}
+.time_se{
+    width: 30%;
+    height: 100%;
+}
