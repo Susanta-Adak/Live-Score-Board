@@ -18,6 +18,43 @@ $("#team_name_label2").click(function () {
   $("#score_table_for_firstteam").hide();
 });
 
+/**ADMIN LOGIN */
+$(document).ready(()=>{
+    
+  $("#admin_login_btn").click(()=>{
+      $("#login_div_section").show();
+      $("body").css("overflow","hidden");
+  });
+  $("#cloce_icon").click(()=>{
+      $("#login_div_section").hide();
+      $("body").css("overflow","scroll");
+  });
+  /*CHECK USER AND PASSWORD*/
+  $("#loginUser").click(()=>{
+      if($("#login_username").val()=="susanta"){
+          if($("#login_pass").val()=="123"){
+              
+              var user=$("#login_username").val();
+              sessionStorage.setItem("user_email",user);
+              window.open('../Admin/adminhome.html','_self');
+              return false;
+          }
+          else{
+              $("#alert_user2").show();
+              setInterval(()=>{
+                  $("#alert_user2").hide();
+              },3000);
+          }
+      }
+      else{
+          $("#alert_user1").show();
+          setInterval(()=>{
+              $("#alert_user1").hide();
+          },3000);
+      }
+  });
+});
+
 /**HEADER BUTTON SECTION */
 $(document).ready(()=>{
   $("#domestic_schedule").hide();
@@ -39,20 +76,24 @@ $(document).ready(()=>{
       "color":"white"
     });
     $("#btn2").css({
-      "background-color":"#fff",
-      "color":"black"
+      "background":"rgba(86, 86, 86, 0.3)",
+      "backdrop-filter":"blur(10px)",
+      "color":"#fff"
     });
     $("#btn3").css({
-      "background-color":"#fff",
-      "color":"black"
+      "background":"rgba(86, 86, 86, 0.3)",
+      "backdrop-filter":"blur(10px)",
+      "color":"#fff"
     });
     $("#btn5").css({
-      "background-color":"#fff",
-      "color":"black"
+      "background":"rgba(86, 86, 86, 0.3)",
+      "backdrop-filter":"blur(10px)",
+      "color":"#fff"
     });
     $("#btn4").css({
-      "background-color":"#fff",
-      "color":"black"
+      "background":"rgba(86, 86, 86, 0.3)",
+      "backdrop-filter":"blur(10px)",
+      "color":"#fff"
     });
   });
 
@@ -67,20 +108,24 @@ $(document).ready(()=>{
       "color":"white"
     });
     $("#btn1").css({
-      "background-color":"#fff",
-      "color":"black"
+      "background":"rgba(86, 86, 86, 0.3)",
+      "backdrop-filter":"blur(10px)",
+      "color":"#fff"
     });
     $("#btn3").css({
-      "background-color":"#fff",
-      "color":"black"
+      "background":"rgba(86, 86, 86, 0.3)",
+      "backdrop-filter":"blur(10px)",
+      "color":"#fff"
     });
     $("#btn5").css({
-      "background-color":"#fff",
-      "color":"black"
+      "background":"rgba(86, 86, 86, 0.3)",
+      "backdrop-filter":"blur(10px)",
+      "color":"#fff"
     });
     $("#btn4").css({
-      "background-color":"#fff",
-      "color":"black"
+      "background":"rgba(86, 86, 86, 0.3)",
+      "backdrop-filter":"blur(10px)",
+      "color":"#fff"
     });
   });
   
@@ -91,24 +136,29 @@ $(document).ready(()=>{
     $("#all_schedule").hide();
     $("#t20_schedule").show();
     $("#btn1").css({
-      "background-color":"#fff",
-      "color":"black"
+      "background":"rgba(86, 86, 86, 0.3)",
+      "backdrop-filter":"blur(10px)",
+      "color":"#fff"
     });
     $("#btn2").css({
-      "background-color":"#fff",
-      "color":"black"
+      "background":"rgba(86, 86, 86, 0.3)",
+      "backdrop-filter":"blur(10px)",
+      "color":"#fff"
     });
     $("#btn3").css({
-      "background-color":"rgb(0, 94, 0)",
-      "color":"white"
+      "background":"rgba(86, 86, 86, 0.3)",
+      "backdrop-filter":"blur(10px)",
+      "color":"#fff"
     });
     $("#btn5").css({
-      "background-color":"#fff",
-      "color":"black"
+      "background":"rgba(86, 86, 86, 0.3)",
+      "backdrop-filter":"blur(10px)",
+      "color":"#fff"
     });
     $("#btn4").css({
-      "background-color":"#fff",
-      "color":"black"
+      "background":"rgba(86, 86, 86, 0.3)",
+      "backdrop-filter":"blur(10px)",
+      "color":"#fff"
     });
   });
 
@@ -119,20 +169,24 @@ $(document).ready(()=>{
     $("#all_schedule").hide();
     $("#women_schedule").show();
     $("#btn1").css({
-      "background-color":"#fff",
-      "color":"black"
+      "background":"rgba(86, 86, 86, 0.3)",
+      "backdrop-filter":"blur(10px)",
+      "color":"#fff"
     });
     $("#btn2").css({
-      "background-color":"#fff",
-      "color":"black"
+      "background":"rgba(86, 86, 86, 0.3)",
+      "backdrop-filter":"blur(10px)",
+      "color":"#fff"
     });
     $("#btn3").css({
-      "background-color":"#fff",
-      "color":"black"
+      "background":"rgba(86, 86, 86, 0.3)",
+      "backdrop-filter":"blur(10px)",
+      "color":"#fff"
     });
     $("#btn5").css({
-      "background-color":"#fff",
-      "color":"black"
+      "background":"rgba(86, 86, 86, 0.3)",
+      "backdrop-filter":"blur(10px)",
+      "color":"#fff"
     });
     $("#btn4").css({
       "background-color":"rgb(0, 94, 0)",
@@ -147,20 +201,24 @@ $(document).ready(()=>{
     $("#women_schedule").hide();
     $("#all_schedule").show();
     $("#btn1").css({
-      "background-color":"#fff",
-      "color":"black"
+      "background":"rgba(86, 86, 86, 0.3)",
+      "backdrop-filter":"blur(10px)",
+      "color":"#fff"
     });
     $("#btn2").css({
-      "background-color":"#fff",
-      "color":"black"
+      "background":"rgba(86, 86, 86, 0.3)",
+      "backdrop-filter":"blur(10px)",
+      "color":"#fff"
     });
     $("#btn3").css({
-      "background-color":"#fff",
-      "color":"black"
+      "background":"rgba(86, 86, 86, 0.3)",
+      "backdrop-filter":"blur(10px)",
+      "color":"#fff"
     });
     $("#btn4").css({
-      "background-color":"#fff",
-      "color":"black"
+      "background":"rgba(86, 86, 86, 0.3)",
+      "backdrop-filter":"blur(10px)",
+      "color":"#fff"
     });
     $("#btn5").css({
       "background-color":"rgb(0, 94, 0)",
