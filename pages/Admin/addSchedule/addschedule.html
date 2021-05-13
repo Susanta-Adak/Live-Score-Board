@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="addScheduleStyle/addschedule.css" />
     <!-- favicon -->
-    <link rel="shortcut icon" href="../../../images/favicon/circle-cropped.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="../../../images/favicon/circle-cropped.png"
+      type="image/x-icon"
+    />
 
     <!-- jquary -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -144,7 +148,68 @@
 
     <!-- START MAIN CONTENT -->
     <div class="content">
-      
+      <!-- header title -->
+      <div class="page_title_section">
+        <p class="cricket_ti"><i>Add Schedule</i></p>
+      </div>
+      <!-- add schedule header for set date and time -->
+      <div class="schedule_header_date_sec">
+        <form action="#" id="header_date_form">
+          <div class="header_input_style">
+            <p>Date:</p>
+            <input type="date" name="" id="">
+          </div>
+          <div class="header_input_style">
+            <p>Time:</p>
+            <input type="time" name="" id="">
+          </div>
+          <div class="header_input_style">
+            <p>Type:</p>
+            <select name="" id="">
+              <option value="">T20</option>
+              <option value="odi">ODI</option>
+            </select>
+          </div>
+        </form>
+      </div>
+      <!-- add team member -->
+      <div class="add_team_member_section">
+        <!-- first team -->
+        <div class="add_first_team">
+          <form action="#" id="first_form">
+            <div>
+              <p>Team Name:</p>
+              <input type="text" name="" id="team_name" placeholder="Enter Team name..">
+            </div>
+            <div>
+              <p>Captain Name:</p>
+              <input type="text" name="" id="team_captain" placeholder="Enter captain name..">
+            </div>
+            <div>
+              <p>Other Players name:</p>
+              <textarea name="" id="other_player" cols="31" rows="5" placeholder="Other players..."></textarea>
+            </div>
+          </form>
+        </div>
+        <!-- second team -->
+        <div class="add_second_team">
+          <form action="#" id="first_form">
+            <div>
+              <p>Team Name:</p>
+              <input type="text" name="" id="team_name" placeholder="Enter Team name..">
+            </div>
+            <div>
+              <p>Captain Name:</p>
+              <input type="text" name="" id="team_captain" placeholder="Enter captain name..">
+            </div>
+            <div>
+              <p>Other Players name:</p>
+              <textarea name="" id="other_player" cols="31" rows="5" placeholder="Other players..."></textarea>
+            </div>
+          </form>
+        </div>
+
+      </div>
     </div>
 
     <script src="addScheduleJS/addschedule.js"></script>

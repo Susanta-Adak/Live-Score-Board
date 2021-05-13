@@ -81,21 +81,21 @@
 .nav div.main_list ul li a:hover {
   color: #00e676;
 }
-#seach_box {
-}
 #search_input {
   height: 30px;
   width: 300px;
-  border-radius: 10px;
+  border-radius: 15px;
   margin-top: 18px;
   margin-left: -40px;
+  border: none;
+  padding-left: 12px;
 }
 #search_input:focus {
   outline: none;
 }
-/***********
+/********************
 *****end of navbar***
-**********/
+*********************/
 
 /********Main section******Live score*******/
 main {
@@ -133,7 +133,6 @@ main {
 *****************************/
 #left_section {
   width: 480px;
-  /* height: 600px; */
   background-color: #fff;
   border-radius: 20px;
   display: flex;
@@ -320,10 +319,8 @@ footer run****/
 #right_section {
   width: 55vw;
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
   z-index: 100;
-  /* margin-bottom: 30px; */
 }
 .news_card {
   width: 400px;
@@ -335,10 +332,10 @@ footer run****/
   align-items: center;
   justify-content: center;
   margin-bottom: 10px;
+  margin-left: 10px;
 }
 .news_card:hover {
   cursor: pointer;
-  box-shadow: 6px 2px 2px rgb(4, 28, 56);
 }
 .card_img1 {
   background-image: url(../images/pant-pandya-rebuilding-act-a.jpg);
@@ -359,7 +356,6 @@ footer run****/
   width: 99%;
   height: 198px;
   border-radius: 20px;
-  /* background-image: url(images/pant-pandya-rebuilding-act-a.jpg); */
   background-size: cover;
 }
 
@@ -369,7 +365,7 @@ footer run****/
 }
 /*********************
 **********style section***
-***************/
+***********************/
 #style1 {
   position: absolute;
   width: 300px;
@@ -420,11 +416,11 @@ footer .cizgi {
 }
 .styl {
   text-decoration: none;
-  color: rgb(0, 109, 136);
+  color: rgb(25, 131, 252);
   margin-left: -45px;
 }
 .styl:hover {
   outline: none;
   text-decoration: none;
-  color: rgb(0, 180, 45);
+  color: rgb(255, 251, 2);
 }

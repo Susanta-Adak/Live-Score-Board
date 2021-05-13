@@ -169,9 +169,6 @@ input[type="file"] {
 div.content {
   margin-left: 200px;
   padding: 1px 16px;
-  
-  
-  
 }
 
 @media screen and (max-width: 700px) {
@@ -219,34 +216,33 @@ div.content {
   height: 91vh;
 }
 /**first innings***/
-#first_innings{
+#first_innings {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 /***second innings**/
-#second_innings{
+#second_innings {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-
-.add_score{
+.add_score {
   width: 100%;
   display: flex;
   justify-content: space-around;
 }
-.first_team_add_score{
+.first_team_add_score {
   width: 400px;
   height: 500px;
   box-shadow: 4px 4px 8px gray;
   background: rgba(86, 86, 86, 0.3);
   backdrop-filter: blur(10px);
 }
-.add_score >div:hover{
+.add_score > div:hover {
   box-shadow: 2px 2px 4px gray;
 }
 /****ADD TLTLE SECTION***/
@@ -277,7 +273,7 @@ div.content {
   height: 35px;
   background-color: #ffffff;
 }
-.select_section:focus{
+.select_section:focus {
   outline: none;
 }
 
@@ -295,7 +291,7 @@ div.content {
   cursor: pointer;
 }
 /*****FIRST TEAM FORM****/
-.add_score_section_form_ft{
+.add_score_section_form_ft {
   width: 100%;
   height: 100%;
   display: flex;
@@ -303,43 +299,50 @@ div.content {
   align-items: center;
   justify-content: space-around;
 }
-.add_score_section_form_ft p{
+.add_score_section_form_ft p {
   margin-bottom: -2px;
   font-size: 1rem;
   font-weight: 500;
   color: rgba(26, 25, 25, 0.979);
 }
-.add_score_section_form_ft select{
+.add_score_section_form_ft select {
   width: 200px;
 }
-.form_header{
+.form_header {
   width: 100%;
   height: 40px;
-  background-image: linear-gradient(45deg,rgba(4, 77, 138, 0.959),rgb(2, 71, 201));
+  background-image: linear-gradient(
+    45deg,
+    rgba(4, 77, 138, 0.959),
+    rgb(2, 71, 201)
+  );
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.update_text{
+.update_text {
   font-size: 1.3rem;
   font-weight: 500;
   color: #bfddf5;
 }
-.main_run,.nobal_wide{
+.main_run,
+.nobal_wide {
   display: flex;
-
 }
-.main_run select,.nobal_wide select{
+.main_run select,
+.nobal_wide select {
   width: 100px;
 }
-#other_run{
+#other_run {
   width: 200px;
 }
-#extrarun{
+#extrarun {
   width: 200px;
 }
 /***FIRST TEAM SCORE PREVIEW SECTION**/
-.first_team_score_preview,.first_team_score_preview2,.second_team_score_preview3{
+.first_team_score_preview,
+.first_team_score_preview2,
+.second_team_score_preview3 {
   width: 600px;
   min-height: 500px;
   box-shadow: 4px 4px 8px gray;
@@ -351,59 +354,61 @@ div.content {
   padding-top: 5px;
 }
 
-.hr_line_for_scoreboard{
+.hr_line_for_scoreboard {
   width: 93%;
   height: 2px;
   border: 1px solid rgb(255, 255, 255);
   background-color: gray;
 }
 
-.batting_score{
+.batting_score {
   width: 100%;
 }
-.batting_score_table{
+.batting_score_table {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.table_row,.table_row2{
+.table_row,
+.table_row2 {
   width: 94%;
   height: 30px;
   display: flex;
   justify-content: space-between;
   font-size: 15px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-weight: bold;
 }
-.table_column1{
+.table_column1 {
   width: 300px;
   height: 30px;
   display: flex;
 }
-.p_nm{
-  width: 200px; 
+.p_nm {
+  width: 200px;
 }
-.p_status{
+.p_status {
   word-wrap: none;
 }
-.score_headingid,.score_headingid2{
+.score_headingid,
+.score_headingid2 {
   display: flex;
   justify-content: space-around;
 }
-.table_column2{
+.table_column2 {
   width: 50px;
   height: 30px;
   text-align: center;
 }
-.footer_score{
+.footer_score {
   width: 94%;
   height: 30px;
   display: flex;
 }
-.name_txt{
+.name_txt {
   width: 67.1%;
   height: 30px;
 }
-.run_footer_prev{
+.run_footer_prev {
   margin-left: 80%;
 }
