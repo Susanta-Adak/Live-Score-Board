@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="AdminStyle/home.css" />
     <!-- favicon -->
-    <link rel="shortcut icon" href="../../images/favicon/circle-cropped.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="../../images/favicon/circle-cropped.png"
+      type="image/x-icon"
+    />
     <!-- jquary -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- fafa icons -->
     <link
       rel="stylesheet"
@@ -18,7 +22,12 @@
       href="path/to/font-awesome/css/font-awesome.min.css"
     />
     <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
     <title>Admin</title>
   </head>
   <body>
@@ -65,9 +74,21 @@
               <div id="profile_photo"></div>
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              <li><a class="dropdown-item" href="#"><i class="fa fa-user" aria-hidden="true"></i> My Profile</a></li>
-              <li><a class="dropdown-item" href="#"><i class="fa fa-lock" aria-hidden="true"></i> Lock screen</a></li>
-              <li><a class="dropdown-item" href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> Log Out</a></li>
+              <li>
+                <a class="dropdown-item" href="#"
+                  ><i class="fa fa-user" aria-hidden="true"></i> My Profile</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"
+                  ><i class="fa fa-lock" aria-hidden="true"></i> Lock screen</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"
+                  ><i class="fa fa-sign-out" aria-hidden="true"></i> Log Out</a
+                >
+              </li>
             </ul>
           </div>
         </div>
@@ -78,13 +99,22 @@
       <div class="my_profileinsidebar" id="my_side_pic">
         <div id="profile_photo_forsidebar">
           <p id="upload_icon">upload</p>
-          <input type="file" accept="image/*" name="photo" id="file_name" onchange="upload_pic()">
+          <input
+            type="file"
+            accept="image/*"
+            name="photo"
+            id="file_name"
+            onchange="upload_pic()"
+          />
         </div>
         <h6>Susanta Adak</h6>
       </div>
-      <a class="active" href="#home"><i class="fa fa-home" aria-hidden="true"></i> Dashboard</a>
-      
-      <a href="#score" class="dropdown-btn"><i class="fa fa-futbol-o" aria-hidden="true"></i> Score Section 
+      <a class="active" href="#home"
+        ><i class="fa fa-home" aria-hidden="true"></i> Dashboard</a
+      >
+
+      <a href="#score" class="dropdown-btn"
+        ><i class="fa fa-futbol-o" aria-hidden="true"></i> Score Section
         <i class="fa fa-caret-down"></i>
       </a>
       <div class="dropdown-container">
@@ -92,19 +122,29 @@
         <a href="#">Link 2</a>
         <a href="#">Link 3</a>
       </div>
-      <a href="addSchedule/addschedule.html" 
-        ><i class="fa fa-newspaper-o" aria-hidden="true"></i> Add Schedule</a
+      <a href="addSchedule/addschedule.html"
+        ><i class="fa fa-plus-circle" aria-hidden="true"></i> Add Schedule</a
       >
-      <a href="#contact"><i class="fa fa-newspaper-o" aria-hidden="true"></i> News</a>
-      <a href="#inbox"><i class="fa fa-envelope-o" aria-hidden="true"></i> Inbox</a>
+      <a href="#contact"
+        ><i class="fa fa-newspaper-o" aria-hidden="true"></i> News</a
+      >
+      <a href="#inbox"
+        ><i class="fa fa-envelope-o" aria-hidden="true"></i> Inbox</a
+      >
       <a href="#apps"><i class="fa fa-android" aria-hidden="true"></i> Apps</a>
-      <a href="#ui"><i class="fa fa-snowflake-o" aria-hidden="true"></i> Ui elements</a>
+      <a href="#ui"
+        ><i class="fa fa-snowflake-o" aria-hidden="true"></i> Ui elements</a
+      >
       <!-- <a href="#ui"> Ui Elements</a>
       <a href="#ui"> Ui Elements</a> -->
-      <a href="#about"><i class="fa fa-address-book-o" aria-hidden="true"></i> About</a>
-      <a href="#setings"><i class="fa fa-cogs" aria-hidden="true"></i> Setings</a>
+      <a href="#about"
+        ><i class="fa fa-address-book-o" aria-hidden="true"></i> About</a
+      >
+      <a href="#setings"
+        ><i class="fa fa-cogs" aria-hidden="true"></i> Setings</a
+      >
     </div>
-    
+
     <!-- START MAIN CONTENT -->
     <div class="content">
       <!-- TITLE SECTION -->
@@ -117,8 +157,12 @@
             <option value="">March 2021</option>
             <option value="">April 2021</option>
           </select>
-          <button class="create_button"><i class="fa fa-plus-circle" aria-hidden="true"></i> Create</button>
-          <div class="settinr_button"><i class="fa fa-cog" aria-hidden="true"></i></div>
+          <button class="create_button">
+            <i class="fa fa-plus-circle" aria-hidden="true"></i> Create
+          </button>
+          <div class="settinr_button">
+            <i class="fa fa-cog" aria-hidden="true"></i>
+          </div>
         </div>
       </div>
       <!-- HEADER CONTENT  -->
@@ -140,7 +184,7 @@
           <p class="p2_forname">Bounce Rate</p>
         </div>
       </div>
-      <hr>
+      <hr />
       <!-- MAIN CONENT -->
       <div class="content_main">
         <div class="main_component1">
@@ -148,48 +192,107 @@
             <p class="welcome">Welcome Susanta</p>
             <p class="msg_count">You have 3 new messages</p>
           </div>
-          
+
           <div class="main_compo_noti">
             <div class="user_nm_s">
-              <div class="user_pic"><img src="../../images/adminhome/subj.jpg" alt="" id="pf_img"></div>
+              <div class="user_pic">
+                <img src="../../images/adminhome/subj.jpg" alt="" id="pf_img" />
+              </div>
               <div class="user_mame">
                 <p class="pn1">Subhajit Patra</p>
                 <p class="pn2">what are you doing now....</p>
                 <p class="pn3">9:30AM</p>
               </div>
             </div>
-            <hr>
+            <hr />
             <div class="user_nm_s">
-              <div class="user_pic"><img src="../../images/adminhome/surj.jpg" alt="" id="pf_img"></div>
+              <div class="user_pic">
+                <img src="../../images/adminhome/surj.jpg" alt="" id="pf_img" />
+              </div>
               <div class="user_mame">
                 <p class="pn1">Surajit Bhowmik</p>
                 <p class="pn2">what are you doing now....</p>
                 <p class="pn3">9:30AM</p>
               </div>
             </div>
-            <hr>
+            <hr />
             <div class="user_nm_s">
-              <div class="user_pic"><img src="../../images/adminhome/subhajit.jpg" alt="" id="pf_img"></div>
+              <div class="user_pic">
+                <img
+                  src="../../images/adminhome/subhajit.jpg"
+                  alt=""
+                  id="pf_img"
+                />
+              </div>
               <div class="user_mame">
                 <p class="pn1">Budhadave Bauna</p>
                 <p class="pn2">what are you doing now....</p>
                 <p class="pn3">9:30AM</p>
               </div>
             </div>
-            <hr>
+            <hr />
             <div class="user_nm_s">
-              <div class="user_pic"><img src="../../images/adminhome/subhajit.jpg" alt="" id="pf_img"></div>
+              <div class="user_pic">
+                <img
+                  src="../../images/adminhome/subhajit.jpg"
+                  alt=""
+                  id="pf_img"
+                />
+              </div>
               <div class="user_mame">
                 <p class="pn1">Budhadave Bauna</p>
                 <p class="pn2">what are you doing now....</p>
                 <p class="pn3">9:30AM</p>
               </div>
             </div>
-            <hr>
+            <hr />
             <div class="user_nm_s">
-              <div class="user_pic"><img src="../../images/adminhome/subj.jpg" alt="" id="pf_img"></div>
+              <div class="user_pic">
+                <img src="../../images/adminhome/subj.jpg" alt="" id="pf_img" />
+              </div>
               <div class="user_mame">
                 <p class="pn1">Subhajit Patra</p>
+                <p class="pn2">what are you doing now....</p>
+                <p class="pn3">9:30AM</p>
+              </div>
+            </div>
+            <hr />
+            <div class="user_nm_s">
+              <div class="user_pic">
+                <img src="../../images/adminhome/surj.jpg" alt="" id="pf_img" />
+              </div>
+              <div class="user_mame">
+                <p class="pn1">Surajit Bhowmik</p>
+                <p class="pn2">what are you doing now....</p>
+                <p class="pn3">9:30AM</p>
+              </div>
+            </div>
+            <hr />
+            <div class="user_nm_s">
+              <div class="user_pic">
+                <img
+                  src="../../images/adminhome/subhajit.jpg"
+                  alt=""
+                  id="pf_img"
+                />
+              </div>
+              <div class="user_mame">
+                <p class="pn1">Budhadave Bauna</p>
+                <p class="pn2">what are you doing now....</p>
+                <p class="pn3">9:30AM</p>
+              </div>
+            </div>
+            <hr />
+            <div class="user_nm_s">
+              <div class="user_pic">
+                <img
+                  src="../../images/adminhome/subhajit.jpg"
+                  alt=""
+                  id="pf_img"
+                />
+              </div>
+              <div class="user_mame">
+                <p class="pn1">Budhadave Bauna</p>
                 <p class="pn2">what are you doing now....</p>
                 <p class="pn3">9:30AM</p>
               </div>
@@ -198,7 +301,11 @@
         </div>
         <!-- COMPONENT 2 -->
         <div class="main_component2">
-          <img src="../../images/adminhome/world map.jpg" alt="Our user all over the world" id="world_map">
+          <img
+            src="../../images/adminhome/world map.jpg"
+            alt="Our user all over the world"
+            id="world_map"
+          />
         </div>
         <!-- COMPONENT 3 -->
         <div class="main_component3">
@@ -216,27 +323,137 @@
             </div>
           </div>
           <div class="footer_sectio">
-            <hr>
-            
-              <table>
-                <tr>
-                  <td><p class="mobile"><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Mobile</p></td>
-                  <td><p class="desktop"><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Desktop</p></td>
-                  <td><p class="tablet"><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Tablet</p></td>
-                </tr>
-              </table>
-            
-            
-            
-            
+            <hr />
+
+            <table>
+              <tr>
+                <td>
+                  <p class="mobile">
+                    <i class="fa fa-dot-circle-o" aria-hidden="true"></i> Mobile
+                  </p>
+                </td>
+                <td>
+                  <p class="desktop">
+                    <i class="fa fa-dot-circle-o" aria-hidden="true"></i>
+                    Desktop
+                  </p>
+                </td>
+                <td>
+                  <p class="tablet">
+                    <i class="fa fa-dot-circle-o" aria-hidden="true"></i> Tablet
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer_section_for_apex">
+        <div class="buisness_devolop">
+          <div class="header_img">
+            <img src="../../images/adminhome/des.jpg" alt="buisness" id="buisness">
+          </div>
+          <div class="description_sec">
+            <p class="buisness_title">Business development new rules for 2021</p>
+            <p class="buisness_description">Lorem ipsum dolor sit amet, this is 
+              a consectetur adipisicing elit, sed do eiusmod tempor incididunt
+              Lorem ipsum dolor sit amet, <br><br>this is a consectetur adipisicing elit, 
+              sed do eiusmod tempor incididunt Lorem ipsum dolor sit amet, this 
+              is a consectetur adipisicing elit, sed do eiusmod tempor incididunt...
+              </p>
+          </div>
+        </div>
+        <div id="app">
+          <div id="chart">
+            <div class="head_title_sec">
+              <p class="bold_title">Newsletter Campaign</p>
+              <p class="faded_title">Overview of Newsletter Campaign</p>
+            </div>
+            <apexchart
+              type="area"
+              height="350"
+              :options="chartOptions"
+              :series="series"
+              style="width: 900px"
+            ></apexchart>
           </div>
         </div>
       </div>
     </div>
-    
 
     <script src="AdminJs/home.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
+    <!-- apex -->
+    <script>
+      window.Promise ||
+        document.write(
+          '<script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js"><\/script>'
+        );
+      window.Promise ||
+        document.write(
+          '<script src="https://cdn.jsdelivr.net/npm/eligrey-classlist-js-polyfill@1.2.20171210/classList.min.js"><\/script>'
+        );
+      window.Promise ||
+        document.write(
+          '<script src="https://cdn.jsdelivr.net/npm/findindex_polyfill_mdn"><\/script>'
+        );
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue-apexcharts"></script>
+    <script>
+      new Vue({
+        el: "#app",
+        components: {
+          apexchart: VueApexCharts,
+        },
+        data: {
+          series: [
+            {
+              name: "Open Ratio",
+              data: [31, 40, 28, 51, 42, 109, 100],
+            },
+            {
+              name: "Recurring Payments",
+              data: [11, 32, 45, 32, 34, 52, 41],
+            },
+          ],
+          chartOptions: {
+            chart: {
+              height: 350,
+              type: "area",
+            },
+            dataLabels: {
+              enabled: false,
+            },
+            stroke: {
+              curve: "smooth",
+            },
+            xaxis: {
+              type: "datetime",
+              categories: [
+                "2018-09-19T00:00:00.000Z",
+                "2018-09-19T01:30:00.000Z",
+                "2018-09-19T02:30:00.000Z",
+                "2018-09-19T03:30:00.000Z",
+                "2018-09-19T04:30:00.000Z",
+                "2018-09-19T05:30:00.000Z",
+                "2018-09-19T06:30:00.000Z",
+              ],
+            },
+            tooltip: {
+              x: {
+                format: "dd/MM/yy HH:mm",
+              },
+            },
+          },
+        },
+      });
+    </script>
   </body>
 </html>

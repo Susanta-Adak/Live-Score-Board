@@ -212,7 +212,7 @@ div.content {
 *****CCONTENT****/
 .content {
   background-color: #e6f4f5;
-  background-image: url(../../../../../images/operateBowling/p2.jpg);
+  background-image: url(../../../../images/addSchedule/cricket.jpg);
   background-size: cover;
   height: 91vh;
   display: flex;
@@ -339,4 +339,23 @@ div.content {
 }
 #other_player:focus{
   outline: none;
+}
+/****ADD TEAM BUTTON**/
+.add_btn_sec{
+  width: 100px;
+  margin-top: 10px;
+}
+#add_btn{
+  width: 100px;
+  height: 50px;
+  border-radius: 25px;
+  background: rgba(0, 113, 241, 0.459);
+  backdrop-filter: blur(10px);
+  border: none;
+  font: 1.2rem Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  color: #fff;
+}
+#add_btn:hover{
+  background: rgba(0, 241, 12, 0.493);
 }

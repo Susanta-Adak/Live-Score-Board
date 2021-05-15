@@ -10,7 +10,7 @@
 #navbar_section_for_admin {
   width: 98.9vw;
   height: 8vh;
-  background-image: linear-gradient(30deg,#0186C4,#01BBDE);
+  background-image: linear-gradient(30deg, #0186c4, #01bbde);
 }
 
 nav {
@@ -49,6 +49,7 @@ nav {
   margin-top: 7px;
   margin-left: 40px;
   padding: 15px;
+  border: none;
 }
 #search_input_admin:focus {
   outline: none;
@@ -66,7 +67,7 @@ nav {
 }
 .notification_section .admin_tasks,
 .admin_mailbox,
-.admin_notification:hover{
+.admin_notification:hover {
   cursor: pointer;
 }
 .fa-tasks,
@@ -127,7 +128,7 @@ nav {
   margin-left: 55px;
   margin-top: 30px;
 }
-#my_side_pic h6{
+#my_side_pic h6 {
   margin-left: 55px;
 }
 #profile_photo_forsidebar p {
@@ -170,7 +171,7 @@ input[type="file"] {
 div.content {
   margin-left: 200px;
   padding: 1px 16px;
-  height: 1000px;
+  height: 1200px;
 }
 
 @media screen and (max-width: 700px) {
@@ -226,18 +227,23 @@ div.content {
   justify-content: space-around;
 }
 #select_section {
-  border-radius: 6px;
-
-  color: rgb(15, 15, 15);
+  border-radius: 9px;
+  border: none;
+  background-color: rgb(0, 168, 219);
+  color: #fff;
+  font-weight: 500;
   height: 35px;
+}
+#select_section:focus {
+  outline: none;
 }
 .create_button {
   height: 35px;
   width: 100px;
   color: #fff;
   background-color: rgb(1, 128, 29);
-  border-radius: 3px;
-  outline: none;
+  border-radius: 9px;
+  border: none;
 }
 .settinr_button {
   width: 35px;
@@ -269,9 +275,9 @@ div.content {
   align-items: center;
   box-shadow: 4px 2px 4px gray;
 }
-.header_components:hover{
+.header_components:hover {
   box-shadow: 1px 1px 1px rgb(161, 160, 160);
-  cursor:pointer;
+  cursor: pointer;
 }
 .session {
   background-color: #019dfa;
@@ -305,14 +311,15 @@ div.content {
 .main_component1 {
   width: 300px;
   height: 400px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   margin-top: 20px;
   box-shadow: 4px 2px 8px rgb(161, 160, 160);
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-radius: 4px;
 }
-.main_component1:hover{
+.main_component1:hover {
   box-shadow: 2px 1px 2px rgb(161, 160, 160);
 }
 .main_compo_head {
@@ -335,9 +342,12 @@ div.content {
 }
 .main_compo_noti {
   width: 90%;
+  background-color: rgb(247, 252, 253);
   overflow-y: scroll;
 }
-
+.main_compo_noti hr {
+  margin: 4px;
+}
 /* width */
 .main_compo_noti::-webkit-scrollbar {
   width: 8px;
@@ -345,19 +355,19 @@ div.content {
 
 /* Track */
 .main_compo_noti::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 2px grey; 
+  box-shadow: inset 0 0 2px grey;
   border-radius: 4px;
 }
- 
+
 /* Handle */
 .main_compo_noti::-webkit-scrollbar-thumb {
-  background: rgba(51, 50, 50, 0.692); 
+  background: rgba(54, 54, 54, 0.253);
   border-radius: 4px;
 }
 
 /* Handle on hover */
 .main_compo_noti::-webkit-scrollbar-thumb:hover {
-  background: #3b3939d8; 
+  background: #3b3939d8;
 }
 
 .user_nm_s {
@@ -365,9 +375,8 @@ div.content {
   height: 50px;
   display: flex;
   align-items: center;
-  
 }
-.user_nm_s:hover{
+.user_nm_s:hover {
   background-color: #c0c9ccd7;
   cursor: pointer;
 }
@@ -376,31 +385,31 @@ div.content {
   height: 45px;
   border-radius: 22.5px;
 }
-#pf_img{
+#pf_img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
 }
-.user_mame{
+.user_mame {
   margin-left: 15px;
   display: flex;
   flex-direction: column;
 }
-.user_mame p{
+.user_mame p {
   margin: 0;
 }
-.user_mame .pn1{
+.user_mame .pn1 {
   font-size: 0.9rem;
   font-weight: 500;
   color: black;
   margin: 0px;
 }
-.user_mame .pn2{
+.user_mame .pn2 {
   font-size: 0.7rem;
   color: black;
   margin-top: -3px;
 }
-.user_mame .pn3{
+.user_mame .pn3 {
   font-size: 0.7rem;
   color: black;
   font-weight: 600;
@@ -411,79 +420,79 @@ div.content {
   height: 400px;
   margin-top: 20px;
   box-shadow: 4px 2px 8px rgb(161, 160, 160);
+  border-radius: 4px;
 }
-.main_component2:hover{
+.main_component2:hover {
   box-shadow: 2px 1px 2px rgb(161, 160, 160);
 }
-#world_map{
+#world_map {
   width: 100%;
   height: 100%;
+  border-radius: 4px;
 }
 
 /*****************
 ****main component 3***
 **********************/
-.main_component3{
+.main_component3 {
   width: 210px;
   height: 400px;
   margin-top: 20px;
   display: flex;
   flex-direction: column;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   box-shadow: 4px 2px 8px rgb(161, 160, 160);
   border-radius: 4px;
 }
-.main_component3:hover{
+.main_component3:hover {
   box-shadow: 2px 1px 2px rgb(161, 160, 160);
 }
-.upper_section{
+.upper_section {
   width: 100%;
   height: 100px;
-  display:flex;
+  display: flex;
   flex-direction: column;
-
 }
-.upper_section .visitor_1{
+.upper_section .visitor_1 {
   font-size: 1.2rem;
   font-weight: 500;
   margin-left: 15px;
   margin-top: 12px;
 }
-.upper_section .visitor_2{
+.upper_section .visitor_2 {
   font-size: 0.7rem;
   color: #313030a9;
   font-weight: 500;
   margin-top: -10px;
   margin-left: 15px;
 }
-.midel_section{
+.midel_section {
   width: 100%;
   height: 200px;
- 
 }
-.footer_sectio{
+.footer_sectio {
   width: 100%;
   height: 100px;
 }
-.mobile{
-  color: #755AF4;
+.mobile {
+  color: #755af4;
   margin-left: 10px;
   font-weight: 500;
   font-size: 0.9rem;
 }
-.desktop{
+.desktop {
   color: #2898f3;
   margin-left: 10px;
   font-weight: 500;
   font-size: 0.9rem;
 }
-.tablet{
+.tablet {
   color: #004f94;
   margin-left: 10px;
   font-weight: 500;
   font-size: 0.9rem;
 }
-.fa-dot-circle-o{
+.fa-dot-circle-o {
   margin-left: 13px;
 }
 /*circle pi chart*/
@@ -500,7 +509,7 @@ div.content {
   height: 150px;
   border-radius: 100%;
   box-shadow: 0px 0px 8px #bebaba;
-} 
+}
 
 .pie {
   transition: all 1s;
@@ -519,8 +528,8 @@ div.content {
   clip: rect(0px, 150px, 150px, 75px);
 }
 #pieSlice1 .pie {
-  background-color: #755AF4;
-  transform:rotate(30deg);
+  background-color: #755af4;
+  transform: rotate(30deg);
 }
 
 #pieSlice2 {
@@ -544,13 +553,137 @@ div.content {
   position: absolute;
   width: 120px;
   height: 120px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 100%;
   top: 15px;
-  left: 15px; 
+  left: 15px;
   box-shadow: 0px 0px 8px #b8b0b0 inset;
   color: rgba(105, 103, 103, 0.692);
   display: flex;
   justify-content: center;
   align-items: center;
 }
+/*****************
+*********apex chart**
+*******************/
+
+.footer_section_for_apex {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+justify-content: space-around;
+}
+/***first dive**/
+.buisness_devolop{
+  width: 320px;
+  height: 443px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 4px 2px 8px rgb(161, 160, 160);
+}
+.header_img{
+  width: 100%;
+  height: 45%;
+
+}
+.description_sec{
+  width: 100%;
+  height: 55%;
+  display: flex;
+  flex-direction: column;
+padding-left: 10px;
+}
+.buisness_title{
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.buisness_description{
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin: 0px;
+  color: #3a3b3bec;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#buisness{
+  width: 95%;
+  height: 100%;
+  border-radius: 4px;
+  box-shadow: 4px 2px 8px rgb(161, 160, 160);
+  position: relative;
+  top: -10px;
+  left: 17px;
+}
+#buisness:hover{
+  box-shadow: 2px 1px 2px rgb(161, 160, 160);
+  top: 7px;
+  left: 10px;
+}
+
+.head_title_sec{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+}
+.bold_title{
+  font-size: 1.4rem;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.faded_title{
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin: 0px;
+  color: #3a3b3ba2;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#chart {
+  padding-top: 10px;
+  padding-left: 10px;
+  background: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 22px 35px -16px rgba(0, 0, 0, 0.1);
+  width: 930px;
+  border-radius: 9px;
+}
+
+select.flat-select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background: #008ffb
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='60px' height='60px'><polyline fill='white' points='46.139,15.518 25.166,36.49 4.193,15.519'/></svg>")
+    no-repeat scroll right 2px top 9px / 16px 16px;
+  border: 0 none;
+  border-radius: 3px;
+  color: #fff;
+  font-family: arial, tahoma;
+  font-size: 16px;
+  font-weight: bold;
+  outline: 0 none;
+  height: 33px;
+  padding: 5px 20px 5px 10px;
+  text-align: center;
+  text-indent: 0.01px;
+  text-overflow: "";
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease 0s;
+  width: auto;
+  -webkit-transition: 0.3s ease all;
+  -moz-transition: 0.3s ease all;
+  -ms-transition: 0.3s ease all;
+  -o-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+select.flat-select:focus,
+select.flat-select:hover {
+  border: 0;
+  outline: 0;
+}
+
+.apexcharts-canvas {
+  margin: 0 auto;
+}
+
+

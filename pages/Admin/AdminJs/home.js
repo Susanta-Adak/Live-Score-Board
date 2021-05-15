@@ -62,3 +62,6 @@ for (i = 0; i < dropdown.length; i++) {
   }
   });
 }
+/*****APEXCHART */
+
+
