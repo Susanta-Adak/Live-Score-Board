@@ -79,13 +79,14 @@ $(document).ready(() => {
       var ball = json_extract.Ball + 1;
       var numberOf4s = json_extract.NumberOf4s + numberOf4s;
       var numberOf6s = json_extract.NumberOf6s + numberOf6s;
+      var extra = json_extract.Extras + extraRun;
       var addDetails = {
         Name: name,
         NumberOf4s: numberOf4s,
         NumberOf6s: numberOf6s,
         OtherRun: otherRun,
         Status: status,
-        Extras: extraRun,
+        Extras: extra,
         Run: run,
         Ball: ball,
       };
@@ -160,6 +161,9 @@ $(document).ready(() => {
       total = total + json_extract.Run + json_extract.Extras;
       totalBall = totalBall + json_extract.Ball;
       totalExtra = totalExtra + json_extract.Extras;
+      if (json_extract.Status != "not out") {
+        wicket = wicket + 1;
+      }
     }
   }
   var name1 = $("<p class='name_txt'></p>").text("Extras");
@@ -180,7 +184,14 @@ $(document).ready(() => {
   );
 
   var total_rn = $("<p class='run_footer_prev'></p>").text(
-    total + "/" + wicket + " (0." + totalBall + ")"
+    total +
+      "/" +
+      wicket +
+      " (" +
+      Math.floor(totalBall / 6) +
+      "." +
+      (totalBall % 6) +
+      ")"
   );
   var footerScore = $("<div class='footer_score'></div>").append(total_rn);
   var scorePreviewSection = $(".first_team_score_preview").append(
@@ -215,13 +226,14 @@ $(document).ready(() => {
       var ball = json_extract.Ball + 1;
       var numberOf4s = json_extract.NumberOf4s + numberOf4s;
       var numberOf6s = json_extract.NumberOf6s + numberOf6s;
+      var extra = json_extract.Extras + extraRun;
       var addDetails = {
         Name: name,
         NumberOf4s: numberOf4s,
         NumberOf6s: numberOf6s,
         OtherRun: otherRun,
         Status: status,
-        Extras: extraRun,
+        Extras: extra,
         Run: run,
         Ball: ball,
       };
@@ -296,6 +308,9 @@ $(document).ready(() => {
       total = total + json_extract.Run + json_extract.Extras;
       totalBall = totalBall + json_extract.Ball;
       totalExtra = totalExtra + json_extract.Extras;
+      if (json_extract.Status != "not out") {
+        wicket = wicket + 1;
+      }
     }
   }
   var name1 = $("<p class='name_txt'></p>").text("Extras");
@@ -316,7 +331,14 @@ $(document).ready(() => {
   );
 
   var total_rn = $("<p class='run_footer_prev'></p>").text(
-    total + "/" + wicket + " (0." + totalBall + ")"
+    total +
+      "/" +
+      wicket +
+      " (" +
+      Math.floor(totalBall / 6) +
+      "." +
+      (totalBall % 6) +
+      ")"
   );
   var footerScore = $("<div class='footer_score'></div>").append(total_rn);
   var scorePreviewSection = $(".first_team_score_preview2").append(
