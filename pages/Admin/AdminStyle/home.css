@@ -571,41 +571,40 @@ div.content {
   width: 100%;
   margin-top: 20px;
   display: flex;
-justify-content: space-around;
+  justify-content: space-around;
 }
 /***first dive**/
-.buisness_devolop{
+.buisness_devolop {
   width: 320px;
   height: 443px;
   background-color: #ffffff;
   border-radius: 4px;
   box-shadow: 4px 2px 8px rgb(161, 160, 160);
 }
-.header_img{
+.header_img {
   width: 100%;
   height: 45%;
-
 }
-.description_sec{
+.description_sec {
   width: 100%;
   height: 55%;
   display: flex;
   flex-direction: column;
-padding-left: 10px;
+  padding-left: 10px;
 }
-.buisness_title{
+.buisness_title {
   font-size: 1.2rem;
   font-weight: 600;
   font-family: Arial, Helvetica, sans-serif;
 }
-.buisness_description{
+.buisness_description {
   font-size: 0.8rem;
   font-weight: 500;
   margin: 0px;
   color: #3a3b3bec;
   font-family: Arial, Helvetica, sans-serif;
 }
-#buisness{
+#buisness {
   width: 95%;
   height: 100%;
   border-radius: 4px;
@@ -614,24 +613,24 @@ padding-left: 10px;
   top: -10px;
   left: 17px;
 }
-#buisness:hover{
+#buisness:hover {
   box-shadow: 2px 1px 2px rgb(161, 160, 160);
   top: 7px;
   left: 10px;
 }
 
-.head_title_sec{
+.head_title_sec {
   width: 100%;
   display: flex;
   flex-direction: column;
   padding-left: 10px;
 }
-.bold_title{
+.bold_title {
   font-size: 1.4rem;
   font-weight: 500;
   font-family: Arial, Helvetica, sans-serif;
 }
-.faded_title{
+.faded_title {
   font-size: 0.8rem;
   font-weight: 500;
   margin: 0px;
@@ -685,5 +684,3 @@ select.flat-select:hover {
 .apexcharts-canvas {
   margin: 0 auto;
 }
-
-

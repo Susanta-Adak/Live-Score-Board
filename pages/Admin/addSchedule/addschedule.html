@@ -186,6 +186,19 @@
                 placeholder="Enter Team name.."
               />
             </div>
+            <div class="for_logo_upload">
+              <p>Team Logo:</p>
+              <div id="profile_photo_for_logo1">
+                <p id="upload_icon">upload</p>
+                <input
+                  type="file"
+                  accept="image/*"
+                  name="photo"
+                  id="file_name1"
+                  onchange="upload_pic1()"
+                />
+              </div>
+            </div>
             <div>
               <p>Captain Name:</p>
               <input
@@ -195,7 +208,7 @@
                 placeholder="Enter captain name.."
               />
             </div>
-            <div>
+            <div style="margin-top: 9px">
               <p>Other Players name:</p>
               <textarea
                 name=""
@@ -219,6 +232,19 @@
                 placeholder="Enter Team name.."
               />
             </div>
+            <div class="for_logo_upload">
+              <p>Team Logo:</p>
+              <div id="profile_photo_for_logo2">
+                <p id="upload_icon">upload</p>
+                <input
+                  type="file"
+                  accept="image/*"
+                  name="photo"
+                  id="file_name2"
+                  onchange="upload_pic2()"
+                />
+              </div>
+            </div>
             <div>
               <p>Captain Name:</p>
               <input
@@ -228,7 +254,7 @@
                 placeholder="Enter captain name.."
               />
             </div>
-            <div>
+            <div style="margin-top: 9px">
               <p>Other Players name:</p>
               <textarea
                 name=""
@@ -242,7 +268,7 @@
         </div>
       </div>
       <div class="add_btn_sec">
-        <button id="add_btn">ADD</button>
+        <button id="add_btn" onclick="add()">ADD</button>
       </div>
     </div>
 

@@ -118,7 +118,9 @@ nav {
   width: 100%;
   height: 150px;
 }
-#profile_photo_forsidebar {
+#profile_photo_forsidebar,
+#profile_photo_for_logo1,
+#profile_photo_for_logo2 {
   width: 90px;
   height: 90px;
   position: relative;
@@ -131,7 +133,9 @@ nav {
 #my_side_pic h6 {
   margin-left: 55px;
 }
-#profile_photo_forsidebar p {
+#profile_photo_forsidebar p,
+#profile_photo_for_logo1 p,
+#profile_photo_for_logo2 p {
   text-align: center;
   padding-top: 45%;
   font-size: 1.5rem;
@@ -143,6 +147,9 @@ input[type="file"] {
   left: 0;
   height: 100%;
   opacity: 0;
+}
+input[type="file"]:hover{
+  cursor: pointer;
 }
 
 .sidebar a {
@@ -266,28 +273,28 @@ div.content {
   font-weight: 600;
 }
 /****add schedule header for set date and time****/
-.schedule_header_date_sec{
+.schedule_header_date_sec {
   width: 80%;
   height: 80px;
   box-shadow: 4px 4px 8px gray;
   background: rgba(86, 86, 86, 0.3);
   backdrop-filter: blur(10px);
 }
-#header_date_form{
+#header_date_form {
   width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-#header_date_form input{
+#header_date_form input {
   width: 200px;
   border: none;
 }
-#header_date_form select{
+#header_date_form select {
   width: 200px;
   border: none;
 }
-.header_input_style{
+.header_input_style {
   display: flex;
   width: 250px;
   height: 30px;
@@ -295,7 +302,7 @@ div.content {
 }
 
 /***add team name**/
-.add_team_member_section{
+.add_team_member_section {
   width: 80%;
   box-shadow: 4px 4px 8px gray;
   background: rgba(86, 86, 86, 0.3);
@@ -303,49 +310,58 @@ div.content {
   display: flex;
   margin-top: 15px;
 }
-.add_first_team,.add_second_team{
+.add_first_team,
+.add_second_team {
   width: 50%;
   height: 400px;
 }
-.add_first_team{
+.add_first_team {
   border-right: 2px solid rgba(77, 76, 76, 0.377);
 }
 /*FIRST FORM***/
-#first_form{
+#first_form {
   width: 100%;
   height: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  margin-top: 10px;
 }
-#first_form p{
+#first_form p {
   margin-bottom: -2px;
   font-size: 1rem;
   font-weight: 500;
   color: rgba(26, 25, 25, 0.979);
 }
-#team_name,#team_captain{
+.for_logo_upload {
+  display: flex;
+  align-items: center;
+  height: 90px;
+}
+#team_name,
+#team_captain {
   width: 250px;
   border: none;
   padding-left: 12px;
 }
-#other_player{
+#other_player {
   border: none;
   padding-left: 12px;
 }
-#team_name:focus,#team_captain:focus{
+#team_name:focus,
+#team_captain:focus {
   outline: none;
 }
-#other_player:focus{
+#other_player:focus {
   outline: none;
 }
 /****ADD TEAM BUTTON**/
-.add_btn_sec{
+.add_btn_sec {
   width: 100px;
   margin-top: 10px;
 }
-#add_btn{
+#add_btn {
   width: 100px;
   height: 50px;
   border-radius: 25px;
@@ -356,6 +372,6 @@ div.content {
   font-weight: 500;
   color: #fff;
 }
-#add_btn:hover{
+#add_btn:hover {
   background: rgba(0, 241, 12, 0.493);
 }

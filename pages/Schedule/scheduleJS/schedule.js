@@ -146,9 +146,8 @@ $(document).ready(()=>{
       "color":"#fff"
     });
     $("#btn3").css({
-      "background":"rgba(86, 86, 86, 0.3)",
-      "backdrop-filter":"blur(10px)",
-      "color":"#fff"
+      "background-color":"rgb(0, 94, 0)",
+      "color":"white"
     });
     $("#btn5").css({
       "background":"rgba(86, 86, 86, 0.3)",

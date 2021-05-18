@@ -56,6 +56,10 @@
     z-index: 100;
     display: flex;
 }
+.schedule_card:hover{
+    background: rgba(86, 86, 86, 0.548);
+    cursor: pointer;
+}
 .date_se{
     width: 30%;
     height: 100%;

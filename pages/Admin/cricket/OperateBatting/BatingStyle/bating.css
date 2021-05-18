@@ -49,6 +49,7 @@ nav {
   margin-top: 7px;
   margin-left: 40px;
   padding: 15px;
+  border: none;
 }
 #search_input_admin:focus {
   outline: none;
@@ -270,12 +271,13 @@ div.content {
   display: flex;
   justify-content: space-around;
 }
-.select_section {
-  border-radius: 6px;
+.select_section{
+  border-radius: 9px;
   border: none;
-  color: rgb(15, 15, 15);
+  background-color: rgb(0, 168, 219);
+  color: #fff;
+  font-weight: 500;
   height: 35px;
-  background-color: #ffffff;
 }
 .select_section:focus{
   outline: none;

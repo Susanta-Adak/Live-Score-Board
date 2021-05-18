@@ -12,7 +12,7 @@ function show_profile_nave(){
     }
 }
 show_profile_nave();
-
+/**SHOW PROFILE IN SIDE BAR */
 function show_profile_p(){
     var email=sessionStorage.getItem("user_email");
     if(localStorage.getItem(email+"user_profileimage")!=null){
