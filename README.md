@@ -64,3 +64,8 @@ Then open `http://localhost:8000` in your browser.
 ## Admin Access
 
 Navigate to `pages/Admin/adminhome.html` to access the admin panel for managing live scores, schedules, and news.
+
+| Field    | Value     |
+|----------|-----------|
+| Username | `susanta` |
+| Password | `123`     |
