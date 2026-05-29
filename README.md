@@ -69,3 +69,46 @@ Navigate to `pages/Admin/adminhome.html` to access the admin panel for managing 
 |----------|-----------|
 | Username | `susanta` |
 | Password | `123`     |
+
+### Operate Options
+
+#### 1. Batting Scorecard (`OperateBatting`)
+
+Update a batsman's score ball by ball during a live match.
+
+| Field      | Description                              |
+|------------|------------------------------------------|
+| Name       | Select the batsman from the dropdown     |
+| 4s         | Number of fours hit in this delivery     |
+| 6s         | Number of sixes hit in this delivery     |
+| Other run  | Runs scored other than boundaries        |
+| Status     | Batsman status — `Not out` or `Out`      |
+| Extra run  | Extra runs (byes, leg byes, etc.)        |
+
+Click **Add** to update the live batting scorecard on the right panel, which shows each batsman's Runs (R), Balls (B), 4s, and 6s, along with Extras and Total score.
+
+![Batting Scorecard](images/operateBatting/operate_batting.png)
+
+---
+
+#### 2. Bowling Scorecard (`OperateBowling`)
+
+Update a bowler's figures over by over during a live match.
+
+| Field    | Description                              |
+|----------|------------------------------------------|
+| Name     | Select the bowler from the dropdown      |
+| No-ball  | Number of no-balls bowled                |
+| Wide     | Number of wides bowled                   |
+| Wicket   | Number of wickets taken                  |
+| 4s       | Fours conceded                           |
+| 6s       | Sixes conceded                           |
+| Other run| Runs conceded other than boundaries      |
+
+Click **Add** to update the live bowling scorecard on the right panel, which shows each bowler's Overs (O), Maidens (M), Runs (R), Wickets (W), No-balls (NB), and Wides (WD).
+
+![Bowling Scorecard](images/operateBowling/operate_bowling.png)
+
+---
+
+Both operate pages support **First Innings** and **Second Innings**, switchable from the dropdown in the top-right corner.
